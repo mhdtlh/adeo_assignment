@@ -1,0 +1,28 @@
+sequenceDiagram
+    autonumber
+
+    participant User
+    participant UI
+    participant Ingestion
+    participant Parser as LlamaParse
+    participant Embed as Embedding Model
+    participant Vector as ChromaDB
+    participant Graph as Neo4j
+
+    User->>UI: Upload PDF
+    UI->>Ingestion: POST /upload
+
+    Ingestion->>Ingestion: Duplicate Check
+    Ingestion->>Parser: Parse PDF
+
+    Parser->>Ingestion: Extract Text
+
+    Ingestion->>Ingestion: Chunk Documents
+    Ingestion->>Embed: Generate Embeddings
+
+    Embed->>Vector: Store embeddings
+    Ingestion->>Graph: Extract entities
+
+    Graph->>Neo4j: Store graph
+
+    Ingestion->>User: Ingestion Complete

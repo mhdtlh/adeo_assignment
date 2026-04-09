@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  api_gateway:
+    build: 
+      context: ../../
+      dockerfile: services/api_gateway/Dockerfile
+    container_name: adeo_api_gateway
+    ports:
+      - "8001:8000"
+    volumes:
+      - ../../services/api_gateway:/app/services/api_gateway
+      - ../../services/shared_utils:/app/services/shared_utils
+    env_file:
+      - ../../.env
+    environment:
+      - RABBITMQ_HOST=adeo_rabbitmq
+      - CHROMA_HOST=adeo_chromadb
+
+networks:
+  default:
+    name: adeo_network
+    external: true

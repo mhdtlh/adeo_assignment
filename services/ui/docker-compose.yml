@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  ui:
+    build: 
+      context: ../../
+      dockerfile: services/ui/Dockerfile
+    container_name: adeo_ui
+    ports:
+      - "8501:8501"
+    volumes:
+      - ../../services/ui:/app/services/ui
+    environment:
+      - API_GATEWAY_URL=http://adeo_api_gateway:8000
+      - INGESTION_URL=http://adeo_ingestion:8000
+
+networks:
+  default:
+    name: adeo_network
+    external: true

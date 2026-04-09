@@ -1,0 +1,250 @@
+{
+    "summary": {
+        "total_questions_evaluated": 20,
+        "average_relevance": 4.25,
+        "average_faithfulness": 3.95,
+        "average_accuracy": 3.05
+    },
+    "details": [
+        {
+            "question": "What types of receptors are found in the skin, and what specific sensory information do they transmit?",
+            "ground_truth": "The skin contains several types of cutaneous receptors, including thermoreceptors, mechanoreceptors, and nociceptors. Thermoreceptors detect temperature, mechanoreceptors sense pressure and surface texture, and nociceptors are responsible for identifying pain.",
+            "system_answer": "The skin contains various types of receptors that transmit specific sensory information. These receptors can be broadly categorized into several types, including:\n\n1. **Mechanoreceptors**: These receptors respond to mechanical stimuli, such as pressure, vibration, and stretch. Examples of mechanoreceptors in the skin include:\n\t* **Meissner's corpuscles**: Found in glabrous (hairless) skin, these receptors are rapidly adapting and respond to light touch and changes in texture.\n\t* **Merkel's receptors**: Also found in glabrous skin, these receptors are slowly adapting and respond to sustained pressure and texture.\n\t* **Pacinian corpuscles**: Found in both glabrous and hairy skin, these receptors are rapidly adapting and respond to vibration and pressure.\n\t* **Ruffini's corpuscles**: Found in both glabrous and hairy skin, these receptors are slowly adapting and respond to skin stretch and lateral movement.\n2. **Thermoreceptors**: These receptors respond to temperature changes and transmit information about heat and cold.\n3. **Nociceptors**: These receptors respond to painful stimuli, such as heat, cold, and mechanical pressure, and transmit information about pain.\n\nThese receptors work together to provide a wide range of sensory information, including:\n\n* **Touch**: Meissner's corpuscles and Merkel's receptors contribute to our sense of touch, allowing us to perceive texture, pressure, and vibration.\n* **Pressure**: Merkel's receptors and Ruffini's corpuscles respond to sustained pressure and skin stretch, helping us to perceive the shape and size of objects.\n* **Vibration**: Pacinian corpuscles respond to vibration, allowing us to perceive vibrations and changes in texture.\n* **Temperature**: Thermoreceptors respond to changes in temperature, helping us to perceive heat and cold.\n* **Pain**: Nociceptors respond to painful stimuli, transmitting information about pain and helping us to avoid injury.\n\nOverall, the skin contains a diverse range of receptors that work together to provide a rich and complex sense of touch and sensation.",
+            "latency_seconds": 3.12,
+            "scores": {
+                "relevance": 5,
+                "faithfulness": 5,
+                "accuracy": 5,
+                "reasoning": "The generated answer directly addresses the question, is supported by the retrieved context, and factually matches the ground truth, providing a detailed and accurate description of the types of receptors found in the skin and the specific sensory information they transmit."
+            }
+        },
+        {
+            "question": "How do rapidly adapting and slowly adapting receptors differ in their response to stimuli?",
+            "ground_truth": "Rapidly adapting receptors respond primarily to the initial indentation or movement of the skin, such as a brief burst of action potentials when objects move a small distance. In contrast, slowly adapting fibers respond not only to the initial indentation but also continue to fire during sustained indentations lasting up to several seconds.",
+            "system_answer": "According to the text, rapidly adapting receptors and slowly adapting receptors differ in their response to stimuli in the following ways:\n\nRapidly adapting receptors, such as Meissner corpuscles and Pacinian corpuscles, respond with a brief burst of action potentials when objects move a small distance during the early stages of lifting. They are responsible for detecting changes in the environment, such as vibration or movement, and their response is short-lived.\n\nOn the other hand, slowly adapting receptors, such as Merkel's receptors and Ruffini corpuscles, respond not only to the initial indentation of skin but also to sustained indentation up to several seconds in duration. Merkel's receptors are responsible for form and texture perception, while Ruffini corpuscles respond to lateral movement or stretching of skin.\n\nIn summary, rapidly adapting receptors respond quickly to changes in the environment but only for a short period, whereas slowly adapting receptors respond to both initial and sustained stimuli, allowing for the perception of form, texture, and movement.",
+            "latency_seconds": 2.03,
+            "scores": {
+                "relevance": 5,
+                "faithfulness": 5,
+                "accuracy": 5,
+                "reasoning": "The generated answer directly addresses the question, is supported by the Retrieved Context, and factually matches the Ground Truth, providing a clear and detailed explanation of the differences between rapidly adapting and slowly adapting receptors."
+            }
+        },
+        {
+            "question": "Explain the role and function of muscle spindles as described in the text.",
+            "ground_truth": "Muscle spindles are long, thin stretch receptors scattered throughout striated muscles that consist of small intrafusal fibers surrounded by a capsule. When a muscle is stretched, the central part of the intrafusal fiber also stretches, causing sensory endings to fire impulses that signal muscle length to the nervous system.",
+            "system_answer": "Muscle spindles play a crucial role in the regulation of muscle movement and proprioception. According to the text, muscle spindles are stretch receptors that are located in striated muscle and contain intrafusal fibers. These intrafusal fibers have sensory endings that fire impulses when the muscle is stretched, allowing the muscle spindle to detect changes in muscle length.\n\nThe muscle spindles receive motor innervation from gamma motor neurons, which regulate the sensitivity of the muscle spindle. This allows the muscle spindle to maintain its sensitivity at any given muscle length. The gamma motor neurons can adjust the contractile portions of the intrafusal fibers, enabling the muscle spindle to respond to different levels of stretch and movement.\n\nThe muscle spindles respond to tissue deformation, which means they can detect changes in the length and velocity of the muscle. This information is then transmitted to the central nervous system, where it is used to control and regulate muscle movement. The muscle spindles work in conjunction with other proprioceptive receptors, such as Golgi tendon organs, to provide feedback about the position, movement, and force of the muscle.\n\nIn essence, the role of muscle spindles is to provide feedback about the length and movement of the muscle, allowing for precise control and regulation of muscle activity. This is essential for maintaining posture, balance, and movement, and for adjusting to changes in the environment.\n\nIt's worth noting that the text also mentions that muscle spindles have a unique structure, with intrafusal fibers that are non-contractile and have sensory endings applied to them. When the muscle is stretched, the central part of the intrafusal fiber is stretched, and each sensory ending fires impulses. This allows the muscle spindle to detect changes in muscle length and transmit this information to the central nervous system.\n\nOverall, the muscle spindles play a vital role in proprioception and motor control, and their function is closely tied to the regulation of muscle movement and posture.",
+            "latency_seconds": 1.54,
+            "scores": {
+                "relevance": 5,
+                "faithfulness": 3,
+                "accuracy": 4,
+                "reasoning": "The generated answer directly addresses the question and is mostly faithful to the context, but includes some additional information not present in the ground truth, such as the role of gamma motor neurons and the comparison with Golgi tendon organs."
+            }
+        },
+        {
+            "question": "How do the different components of pain signals manifest in human perception?",
+            "ground_truth": "Pain signals are separated into individual components based on the nerve fibers transmitting them. \"First pain\" is a rapidly transmitted, well-localized cutaneous pricking sensation, while \"second pain\" is a slower, highly affective burning sensation that is poorly localized and poorly tolerated.",
+            "system_answer": "The different components of pain signals manifest in human perception in distinct ways. According to the text, pain signals can be separated into individual components, corresponding to different types of nerve fibers used for transmitting these signals. \n\nThere are two main types of pain signals: first pain and second pain. First pain, also known as cutaneous pricking pain, is rapidly transmitted and has high spatial resolution. It is well localized, meaning that the person can pinpoint the exact location of the pain, and is easily tolerated. \n\nOn the other hand, second pain, also known as burning pain, is much slower and has a highly affective component. It is poorly localized, meaning that the person may have difficulty pinpointing the exact location of the pain, and is poorly tolerated. This type of pain is often characterized by a burning sensation.\n\nAdditionally, there is a third type of pain, known as deep pain, which arises from viscera, musculature, and joints. This type of pain is also poorly localized and can be chronic, often associated with referred pain.\n\nIn terms of human perception, these different components of pain signals can manifest in various ways. For example, a person may experience a sharp, localized pain when they touch something hot (first pain), followed by a slower, more diffuse burning sensation (second pain). Alternatively, they may experience a deep, aching pain in their muscles or joints (deep pain) that is harder to pinpoint and may be more persistent.\n\nOverall, the different components of pain signals play a significant role in shaping our subjective experience of pain, and understanding these components can help us better appreciate the complex nature of pain perception.",
+            "latency_seconds": 3.04,
+            "scores": {
+                "relevance": 5,
+                "faithfulness": 4,
+                "accuracy": 4,
+                "reasoning": "The generated answer directly addresses the question and is mostly supported by the ground truth, but it introduces additional information about 'deep pain' not present in the ground truth, which reduces its faithfulness and accuracy."
+            }
+        },
+        {
+            "question": "What are the specific functions of the Golgi tendon organs and joint receptors?",
+            "ground_truth": "Golgi tendon organs provide force feedback by detecting changes in muscle tension. Joint receptors, which are low-threshold mechanoreceptors divided into four groups, signal characteristics of joint function such as position, direction, and the speed of movements.",
+            "system_answer": "The Golgi tendon organs and joint receptors are both important components of our somatosensory system. \n\nThe Golgi tendon organs are responsible for detecting the force or tension in a muscle. They are located at the junction between muscles and their tendons. According to the provided mermaid graph, the Golgi tendon organs provide \"force feedback\" to the inter-neurons, which helps to regulate muscle force.\n\nOn the other hand, joint receptors, also known as mechanoreceptors, are located in the joints and are responsible for detecting the position, movement, direction, and speed of movements of the joints. They signal different characteristics of joint function and are divided into four groups. The free receptors or type 4 joint receptors are nociceptors, which detect pain. \n\nIn the provided graph, the joint receptors are not explicitly mentioned, but the spindles (muscle spindles) are shown to provide \"length & velocity feedback\" to the alpha motor neurons. However, according to the text, joint receptors do provide information about joint function.\n\nIn summary, the Golgi tendon organs detect muscle force, while the joint receptors detect joint position, movement, and other characteristics of joint function. Both play important roles in our somatosensory system, helping us to perceive and control our movements.",
+            "latency_seconds": 2.03,
+            "scores": {
+                "relevance": 5,
+                "faithfulness": 4,
+                "accuracy": 5,
+                "reasoning": "The generated answer directly addresses the question, is supported by the retrieved context, and factually matches the ground truth, providing detailed information about the functions of Golgi tendon organs and joint receptors."
+            }
+        },
+        {
+            "question": "What primary services does the Materials Processing Institute offer to the global steel industry?",
+            "ground_truth": "The Materials Processing Institute provides independent research, consultancy, technical support, pilot production, and up-scaling services to the global steel industry. They specialize in primary processes like iron and steelmaking, product development, and rolling mill technologies.",
+            "system_answer": "The Materials Processing Institute (MPI) offers a wide range of services to the global steel industry. According to the documents, the primary services include:\n\n1. **Iron, Steelmaking, and Casting Process Development**: MPI provides expertise in developing and improving iron and steelmaking processes, as well as casting technologies.\n2. **Rolling Mill Technologies and Engineering**: The institute offers services related to rolling mill technologies, including engineering and process development.\n3. **Product Development and Pilot Production**: MPI provides facilities and expertise for product development and pilot production, allowing steel companies to test and refine new products.\n4. **Coal, Coke, and Raw Materials**: The institute offers services related to coal, coke, and raw materials, including testing and analysis.\n5. **Supporting Services**: MPI provides a range of supporting services, including laboratory testing, analysis, and consultancy services.\n6. **Consultancy Services**: The institute offers consultancy services to the steel industry, providing expert advice and guidance on various aspects of steel production and processing.\n\nAdditionally, MPI has extensive site facilities, including well-equipped laboratories, a heavy pilot plant, pilot steelmaking, casting, and coke production facilities. These facilities enable the institute to provide comprehensive services to the steel industry, from process development to product testing and validation.\n\nOverall, the Materials Processing Institute is a one-stop-shop for the steel industry, offering a broad range of services and expertise to support the development and production of steel products.",
+            "latency_seconds": 2.04,
+            "scores": {
+                "relevance": 5,
+                "faithfulness": 4,
+                "accuracy": 4,
+                "reasoning": "The generated answer directly addresses the question, is mostly supported by the Retrieved Context, but has some minor discrepancies with the Ground Truth, such as the specific services listed."
+            }
+        },
+        {
+            "question": "How does the Institute support clients in developing new steel products without disrupting normal production?",
+            "ground_truth": "The Institute operates tonnage-scale melting and casting facilities, including fully instrumented pilot facilities that replicate full-scale steel plants. This allows clients to test next-generation process developments and produce pilot quantities of new steel grades in a controlled off-line environment, away from the risks and pressures of active tonnage production.",
+            "system_answer": "The Institute supports clients in developing new steel products without disrupting normal production by providing a range of services and facilities. According to the documents, the Institute has expertise in process metallurgy of steelmaking, steelmaking and casting, and process integration. They also have well-equipped laboratories, pilot steelmaking, casting, and coke production facilities, which enable them to develop and test new steel products on a small scale before they are implemented in full-scale production.\n\nThe Institute's services include technical support and research projects, product development and pilot production, and consultancy services. They can also provide advice on the value in use of raw materials and support the assessment of raw materials. Additionally, the Institute has a metallography laboratory with state-of-the-art equipment, such as FEG-SEM, which enables them to conduct forensic investigations into the root causes of production defects.\n\nBy using these facilities and services, clients can develop and test new steel products without disrupting their normal production. The Institute's pilot plant facilities allow for small-scale production, which reduces the risk of disrupting normal production and enables clients to test and refine their products before implementing them on a larger scale.\n\nOverall, the Institute's support for clients in developing new steel products without disrupting normal production is based on its expertise, facilities, and services, which enable clients to develop, test, and refine their products in a controlled and efficient manner.",
+            "latency_seconds": 2.03,
+            "scores": {
+                "relevance": 5,
+                "faithfulness": 4,
+                "accuracy": 4,
+                "reasoning": "The generated answer directly addresses the question and is supported by the Retrieved Context, but it does not perfectly match the Ground Truth in terms of specific details and wording."
+            }
+        },
+        {
+            "question": "What role does the Institute's Process Simulation and Design capability play in steel manufacturing?",
+            "ground_truth": "Process simulation utilizes techniques like Computational Fluid Dynamics (CFD), Finite Element Method (FEM), and extensive physical modeling. These methods combine to give the Institute a fundamental understanding of actual plant operations, helping to drive process improvements based on sound, data-backed knowledge.",
+            "system_answer": "The Institute's Process Simulation and Design capability plays a crucial role in steel manufacturing. According to the documents, process simulation is carried out to support process and product development. The techniques utilized include CFD (Computational Fluid Dynamics), FEM (Finite Element Method), and extensive physical modeling.\n\nThese techniques combine to enable the Institute to gain a fundamental understanding of what is actually taking place on the plant, which helps drive process improvements from a position of sound knowledge. In other words, the Institute's Process Simulation and Design capability helps to optimize steel manufacturing processes, identify potential issues, and improve overall efficiency.\n\nBy using these advanced simulation techniques, the Institute can help steel manufacturers to develop new products, improve existing processes, and reduce costs. The Institute's expertise in process simulation and design is a key part of its services to the steel industry, and it is an important tool for helping manufacturers to stay competitive and innovative in the field.",
+            "latency_seconds": 2.02,
+            "scores": {
+                "relevance": 5,
+                "faithfulness": 4,
+                "accuracy": 4,
+                "reasoning": "The generated answer directly addresses the question and is largely supported by the Retrieved Context, but includes some additional information not present in the Ground Truth, such as optimizing steel manufacturing processes and helping manufacturers stay competitive."
+            }
+        },
+        {
+            "question": "In what ways does the Institute assist in the area of Coal, Coke, and Raw Materials?",
+            "ground_truth": "The Institute provides pilot and laboratory-scale equipment for characterizing coal, its transformation to coke, and subsequent evaluation. This expertise helps the steel industry understand and control input materials, and it assists coal mining companies in meeting their clients' needs using tools like a fully instrumented moving wall coke oven.",
+            "system_answer": "The Institute provides assistance in the area of Coal, Coke, and Raw Materials by offering services such as advice on the value in use of raw materials and assessment of raw materials. They also operate a coke oven and have expertise in process integration, which can be applied to the production and use of coal, coke, and raw materials. Additionally, the Institute has laboratories and supporting facilities, including a metallography laboratory with a FEG-SEM, which can be used to analyze and test the properties of coal, coke, and raw materials. Furthermore, the Institute's services to the steel industry include Coal, Coke, and Raw Materials, although the specific details of these services are not fully elaborated in the provided documents.",
+            "latency_seconds": 2.03,
+            "scores": {
+                "relevance": 5,
+                "faithfulness": 4,
+                "accuracy": 4,
+                "reasoning": "The generated answer directly addresses the question and is mostly supported by the Retrieved Context, but it does not fully match the Ground Truth in terms of specific details and equipment mentioned."
+            }
+        },
+        {
+            "question": "What resources does the Institute employ to investigate the root causes of production defects?",
+            "ground_truth": "The Institute's metallography laboratory includes a wide range of optical microscopy equipment, complemented by a state-of-the-art Field Emission Gun Scanning Electron Microscope (FEG-SEM). Combined with experienced scientists, this equipment enables fundamental forensic investigations into typical and novel production defects, often leading to comprehensive solutions through process engineering.",
+            "system_answer": "The Institute employs several resources to investigate the root causes of production defects. \n\n1. Metallography laboratory: The Institute has a metallography laboratory that is equipped with a wide range of optical microscopy equipment, complemented by a state-of-the-art FEG-SEM (Field Emission Gun Scanning Electron Microscope). \n\n2. Experienced scientists and engineers: The Institute has experienced scientists and engineers who work together to enable the Institute to offer fundamental forensic investigations into the root causes of many typical production defects, as well as those that are more novel.\n\n3. Process design and engineering: The Institute combines its metallurgical expertise with process design and engineering to deliver comprehensive solutions. This allows the Institute to gain a fundamental understanding of what is actually taking place on the plant and to help drive process improvements from a position of sound knowledge.\n\n4. Laboratories and supporting facilities: The Institute has fully equipped laboratories and supporting facilities that enable it to carry out investigations and tests to identify the root causes of production defects.\n\n5. Project teams: The Institute has project teams that work together to investigate production defects and develop solutions to prevent them from occurring in the future.\n\nThese resources allow the Institute to provide a thorough and comprehensive investigation into the root causes of production defects, and to develop effective solutions to prevent them from occurring in the future.",
+            "latency_seconds": 2.04,
+            "scores": {
+                "relevance": 5,
+                "faithfulness": 4,
+                "accuracy": 4,
+                "reasoning": "The generated answer directly addresses the question and is mostly supported by the Retrieved Context, but includes some additional information not present in the Ground Truth."
+            }
+        },
+        {
+            "question": "What specific allegations of domestic abuse did the patient disclose regarding his husband?",
+            "ground_truth": "The patient disclosed that his husband had been physically assaulting him by hitting and kicking him for approximately six months. Additionally, the husband has been controlling him by calling him names and not allowing him to go out unaccompanied, leading to the patient becoming increasingly isolated.",
+            "system_answer": "The provided documents do not specify the particular allegations of domestic abuse the patient disclosed regarding his husband, Philip Jones. The documents mention that the main type of abuse suspected is domestic, but they do not provide details about the specific allegations made by the patient.",
+            "latency_seconds": 2.04,
+            "scores": {
+                "relevance": 4,
+                "faithfulness": 5,
+                "accuracy": 1,
+                "reasoning": "The generated answer does not match the Ground Truth, but it is faithful to the Retrieved Context and somewhat relevant to the question, as it addresses the lack of specific information in the documents."
+            }
+        },
+        {
+            "question": "How does the patient's physical condition affect his vulnerability in this situation?",
+            "ground_truth": "The patient suffers from muscular atrophy and relies on a wheelchair for mobility. Because of these physical limitations, he is highly dependent on his husband to meet his daily needs, which severely heightens his vulnerability to the alleged abuse.",
+            "system_answer": "Based on the provided documents, it is mentioned that the patient's husband tells them they are useless. This suggests a situation of domestic abuse, which can include psychological and physical abuse. \n\nThe documents also list some examples of vulnerabilities, including poor general health and poor lifestyle choices. However, there is no specific information about the patient's physical condition.\n\nTherefore, I don't know exactly how the patient's physical condition affects his vulnerability in this situation, as this information is not present in the documents.",
+            "latency_seconds": 2.02,
+            "scores": {
+                "relevance": 2,
+                "faithfulness": 5,
+                "accuracy": 1,
+                "reasoning": "The generated answer does not directly address the question and lacks factual match with the Ground Truth, but it is faithful to the Retrieved Context as it states the lack of information about the patient's physical condition."
+            }
+        },
+        {
+            "question": "What are the patient's views and wishes regarding the abuse and his future?",
+            "ground_truth": "The patient expressed that he wants to feel safe, as he is currently frightened of returning home upon discharge and does not know where to turn. He is willing to accept support to understand his options, though he is currently unsure if he wants to officially end his marriage.",
+            "system_answer": "According to the document, the patient states that his husband is not abusive when visiting. However, it is also mentioned that the adult is in danger of abuse and immediate actions have been identified to reduce the potential for further abuse. Unfortunately, the document does not provide a detailed account of the patient's views and wishes regarding the abuse and his future. It only mentions that the patient has not taken any necessary steps or actions to try to address the abuse or neglect.",
+            "latency_seconds": 2.04,
+            "scores": {
+                "relevance": 2,
+                "faithfulness": 2,
+                "accuracy": 1,
+                "reasoning": "The generated answer does not directly address the patient's views and wishes, and it provides information not present in the ground truth, indicating a lack of faithfulness to the retrieved context and inaccuracy compared to the ground truth."
+            }
+        },
+        {
+            "question": "Have any immediate actions been taken to reduce the potential for further abuse, and what is the patient's current living situation?",
+            "ground_truth": "The patient currently remains in the hospital, where he states his husband is not abusive during visits. To reduce future risks upon his eventual discharge, the patient has agreed to a referral to Harbour Support Services.",
+            "system_answer": "According to the provided documents, specifically page_label 4 of the pdf_handwritten.pdf file, it is stated that \"Yes\" immediate actions have been identified to reduce the potential for further abuse. However, the details of these actions are not specified in the provided text.\n\nRegarding the patient's current living situation, it is mentioned in the same document that the \"Patient remains in hospital.\" This suggests that the patient is currently residing in a hospital, but no further information is provided about their long-term living arrangements or whether they will be returning to a potentially abusive environment.",
+            "latency_seconds": 2.03,
+            "scores": {
+                "relevance": 4,
+                "faithfulness": 3,
+                "accuracy": 2,
+                "reasoning": "The generated answer partially addresses the question but lacks specific details about the actions taken to reduce abuse and the patient's future living situation, and it does not fully match the Ground Truth."
+            }
+        },
+        {
+            "question": "Why has the alleged perpetrator not been informed about this concern form?",
+            "ground_truth": "The alleged perpetrator, the patient's husband, is unaware of the concern because the medical staff deemed it unsafe to discuss it with him. Informing the husband could potentially trigger retaliation and put the patient at further risk of physical or psychological harm.",
+            "system_answer": "According to the provided text, the alleged perpetrator has not been informed about this concern form because \"It is unsafe to discuss the concerns with the alleged perpetrator.\" This is stated in the section where it says \"Only discuss this Concern with the alleged perpetrator if it is safe to do so and there is no further risk to the victim or others.\" Since the answer is \"No\" to discussing the concern with the alleged perpetrator, the reason given is that \"It is unsafe to discuss the concerns with the alleged perpetrator.\"",
+            "latency_seconds": 3.77,
+            "scores": {
+                "relevance": 5,
+                "faithfulness": 5,
+                "accuracy": 4,
+                "reasoning": "The generated answer directly addresses the question and is supported by the Retrieved Context, but it does not fully capture the nuances of the Ground Truth, such as the potential for retaliation and further harm to the patient."
+            }
+        },
+        {
+            "question": "According to the report, what is the primary function of the International Court of Justice (ICJ)?",
+            "ground_truth": "The primary function of the International Court of Justice is to settle, in accordance with international law, legal disputes submitted to it by States. It also exercises advisory jurisdiction by providing advisory opinions on legal questions referred to it by authorized United Nations organs and specialized agencies.",
+            "system_answer": "According to the report, the primary function of the International Court of Justice (ICJ) is to settle disputes between states in accordance with international law. The ICJ has a dual jurisdiction: it can consider disputes between states and provide advisory opinions. The report states that the ICJ's function is \"to settle, in accordance with international law, disputes that are submitted to it by states in the exercise of their sovereignty.\" (page_label: 16, file_name: pdf_long_arabic.pdf)",
+            "latency_seconds": 2.06,
+            "scores": {
+                "relevance": 5,
+                "faithfulness": 4,
+                "accuracy": 4,
+                "reasoning": "The generated answer directly addresses the question and is mostly supported by the Retrieved Context, but it lacks the detail about the ICJ exercising advisory jurisdiction by providing advisory opinions on legal questions referred to it by authorized United Nations organs and specialized agencies as mentioned in the Ground Truth."
+            }
+        },
+        {
+            "question": "What action did the Court take regarding the dispute over the 1899 Arbitral Award between Guyana and Venezuela in its Order of May 1, 2025?",
+            "ground_truth": "In its Order of May 1, 2025, the Court reaffirmed the provisional measures it had previously indicated to protect the disputed territory. Additionally, it indicated a new provisional measure explicitly ordering Venezuela to refrain from holding or preparing for elections in the disputed territory currently administered and controlled by Guyana.",
+            "system_answer": "The provided documents do not mention the specific action taken by the Court regarding the dispute over the 1899 Arbitral Award between Guyana and Venezuela in its Order of May 1, 2025. However, it does mention that the Court confirmed precautionary measures in favor of Guyana and Venezuela, but the date of the order is not specified as May 1, 2025. Additionally, the documents mention an order issued on May 5, 2025, in a different case, but not the specific case of Guyana and Venezuela. Therefore, I don't know the specific action taken by the Court on May 1, 2025, regarding this dispute.",
+            "latency_seconds": 2.04,
+            "scores": {
+                "relevance": 4,
+                "faithfulness": 5,
+                "accuracy": 1,
+                "reasoning": "The generated answer does not directly match the Ground Truth, but it does indicate that the information is not available in the provided documents, showing faithfulness to the context. However, it fails to provide the correct information as stated in the Ground Truth."
+            }
+        },
+        {
+            "question": "What was the outcome of the preliminary objections raised by Azerbaijan in its dispute with Armenia over the Convention on the Elimination of All Forms of Racial Discrimination?",
+            "ground_truth": "On November 12, 2024, the Court delivered its Judgment officially rejecting the two preliminary objections raised by Azerbaijan. Consequently, the Court declared that it successfully has jurisdiction, on the basis of Article 22 of the Convention, to entertain the Application filed by Armenia.",
+            "system_answer": "The outcome of the preliminary objections raised by Azerbaijan in its dispute with Armenia over the Convention on the Elimination of All Forms of Racial Discrimination was that the court rejected both preliminary objections. \n\nThe court voted 16 to 1 to reject the first preliminary objection, and 15 to 2 to reject the second preliminary objection. This means that the court found that it had jurisdiction to hear the case and that the objections raised by Azerbaijan were not valid. \n\nThe court's decision allowed the case to proceed, and Armenia was given the opportunity to submit its observations and conclusions on the preliminary objections raised by Azerbaijan.",
+            "latency_seconds": 3.04,
+            "scores": {
+                "relevance": 5,
+                "faithfulness": 1,
+                "accuracy": 2,
+                "reasoning": "The generated answer does not match the Ground Truth and provides additional information not supported by the Retrieved Context, such as the vote counts, which indicates hallucination."
+            }
+        },
+        {
+            "question": "What obligations did the Court identify regarding climate change in its Advisory Opinion of July 23, 2025?",
+            "ground_truth": "The Court unanimously opined that States have binding obligations under both climate change treaties and customary international law to protect the climate system and environment from anthropogenic greenhouse gas emissions. This specifically includes the duty to exercise due diligence to prevent significant environmental harm and to cooperate in good faith to mitigate climate change.",
+            "system_answer": "The provided documents do not mention the Court's Advisory Opinion of July 23, 2025, specifically. However, I can provide some general information about climate change obligations mentioned in the documents.\n\nAccording to the extracted facts from page_label 54 of the pdf_long_arabic.pdf file, the Paris Agreement aims to limit global warming to 1.5 degrees Celsius above pre-industrial levels. The document also mentions that countries have obligations to undertake efforts to achieve this goal, including preparing and communicating nationally determined contributions.\n\nAdditionally, the documents mention the importance of environmental protection, as seen in the extracted fact from page_label 12, which includes environmental protection as one of the issues.\n\nHowever, since the specific Advisory Opinion of July 23, 2025, is not mentioned in the provided documents, I don't know the exact obligations the Court identified regarding climate change in that opinion.",
+            "latency_seconds": 2.03,
+            "scores": {
+                "relevance": 2,
+                "faithfulness": 4,
+                "accuracy": 1,
+                "reasoning": "The generated answer does not directly address the question and does not factually match the Ground Truth, but it is supported by the Retrieved Context in the sense that it explains the lack of relevant information."
+            }
+        },
+        {
+            "question": "How did the Court address the application of the Genocide Convention in the case between South Africa and Israel?",
+            "ground_truth": "South Africa instituted proceedings alleging that Israel's actions in the Gaza Strip violated the Genocide Convention, leading the Court to issue and repeatedly reaffirm several provisional measures. These measures ordered Israel to take all possible steps to prevent acts of genocide, ensure the unhindered provision of humanitarian assistance, and halt any military offensive in the Rafah governorate that could inflict conditions leading to the physical destruction of the Palestinian group.",
+            "system_answer": "According to the documents, there is no information about the Court addressing the application of the Genocide Convention in the case between South Africa and Israel. The provided context does not mention such a case. However, it does mention that Israel must punish incitement to genocide, as stated in the document with the label \"67/67\" from the file \"pdf_long_arabic.pdf\". Additionally, the context mentions a request to the Court to issue an advisory opinion on Israel's obligations regarding the presence and activities of the United Nations and other international organizations in the occupied Palestinian territory. But it does not provide information on a specific case between South Africa and Israel regarding the Genocide Convention.",
+            "latency_seconds": 3.03,
+            "scores": {
+                "relevance": 2,
+                "faithfulness": 4,
+                "accuracy": 1,
+                "reasoning": "The generated answer does not directly address the question and does not factually match the Ground Truth, but it is supported by the Retrieved Context in the sense that it correctly states the lack of information about the specific case in the provided context."
+            }
+        }
+    ]
+}

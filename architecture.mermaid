@@ -1,0 +1,39 @@
+sequenceDiagram
+    autonumber
+
+    participant User
+    participant UI as Streamlit UI
+    participant Gateway as API Gateway
+    participant MQ as RabbitMQ
+    participant Agent
+    participant Vector as ChromaDB
+    participant Graph as Neo4j
+    participant Web as Tavily Search
+    participant Redis
+
+    User->>UI: Ask Question
+    UI->>Gateway: POST /query
+    Gateway->>MQ: Push request
+    Gateway->>Redis: Store "processing"
+
+    MQ->>Agent: Consume request
+
+    Agent->>Vector: Vector Search
+    Agent->>Graph: Graph Query
+
+    alt High Confidence
+        Agent->>Gateway: Send result
+    else Low Confidence
+        Agent->>Web: Web Search
+        Web->>Agent: Results
+        Agent->>Gateway: Send result
+    end
+
+    Gateway->>Redis: Store result
+
+    UI->>Gateway: Poll /result
+    Gateway->>Redis: Fetch result
+    Redis->>Gateway: Return result
+
+    Gateway->>UI: Response
+    UI->>User: Show Answer

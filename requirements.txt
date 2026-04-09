@@ -1,0 +1,33 @@
+# --- Web & API Frameworks ---
+fastapi
+uvicorn
+streamlit
+python-multipart
+
+# --- Communication & State ---
+pika
+requests
+redis
+
+# --- Pinned AI Ecosystem (Known Stable Combo) ---
+llama-index==0.12.12
+llama-index-core==0.12.12
+llama-index-readers-file==0.4.1
+llama-index-llms-groq==0.3.1
+llama-index-embeddings-huggingface==0.4.0
+transformers==4.44.0
+sentence-transformers==3.0.1
+llama-parse==0.5.18
+
+# --- Pinned Database Clients ---
+llama-index-vector-stores-chroma==0.4.1
+chromadb==0.5.23
+llama-index-graph-stores-neo4j==0.4.1
+neo4j==5.27.0
+
+# --- Utilities ---
+python-dotenv
+nest-asyncio
+rich
+colorlog
+tavily-python==0.3.3

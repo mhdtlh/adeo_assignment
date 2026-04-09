@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  ingestion:
+    build: 
+      context: ../../
+      dockerfile: services/ingestion/Dockerfile
+    container_name: adeo_ingestion
+    ports:
+      - "8002:8000"
+    volumes:
+      - ../../services/ingestion:/app/services/ingestion
+      - ../../services/shared_utils:/app/services/shared_utils
+      - ../../ingestion.py:/app/ingestion.py
+      - ../../source_docs:/app/source_docs
+      - ./hf_cache:/app/hf_cache
+    env_file:
+      - ../../.env
+    environment:
+      - CHROMA_HOST=adeo_chromadb
+      - NEO4J_URL=bolt://adeo_neo4j:7687
+      - PYTHONUNBUFFERED=1
+      - TAVILY_API_KEY=${TAVILY_API_KEY}
+
+networks:
+  default:
+    name: adeo_network
+    external: true

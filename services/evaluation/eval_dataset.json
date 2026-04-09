@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What types of receptors are found in the skin, and what specific sensory information do they transmit?",
+    "ground_truth": "The skin contains several types of cutaneous receptors, including thermoreceptors, mechanoreceptors, and nociceptors. Thermoreceptors detect temperature, mechanoreceptors sense pressure and surface texture, and nociceptors are responsible for identifying pain.",
+    "source_file": "pdf_a.pdf"
+  },
+  {
+    "question": "How do rapidly adapting and slowly adapting receptors differ in their response to stimuli?",
+    "ground_truth": "Rapidly adapting receptors respond primarily to the initial indentation or movement of the skin, such as a brief burst of action potentials when objects move a small distance. In contrast, slowly adapting fibers respond not only to the initial indentation but also continue to fire during sustained indentations lasting up to several seconds.",
+    "source_file": "pdf_a.pdf"
+  },
+  {
+    "question": "Explain the role and function of muscle spindles as described in the text.",
+    "ground_truth": "Muscle spindles are long, thin stretch receptors scattered throughout striated muscles that consist of small intrafusal fibers surrounded by a capsule. When a muscle is stretched, the central part of the intrafusal fiber also stretches, causing sensory endings to fire impulses that signal muscle length to the nervous system.",
+    "source_file": "pdf_a.pdf"
+  },
+  {
+    "question": "How do the different components of pain signals manifest in human perception?",
+    "ground_truth": "Pain signals are separated into individual components based on the nerve fibers transmitting them. \"First pain\" is a rapidly transmitted, well-localized cutaneous pricking sensation, while \"second pain\" is a slower, highly affective burning sensation that is poorly localized and poorly tolerated.",
+    "source_file": "pdf_a.pdf"
+  },
+  {
+    "question": "What are the specific functions of the Golgi tendon organs and joint receptors?",
+    "ground_truth": "Golgi tendon organs provide force feedback by detecting changes in muscle tension. Joint receptors, which are low-threshold mechanoreceptors divided into four groups, signal characteristics of joint function such as position, direction, and the speed of movements.",
+    "source_file": "pdf_a.pdf"
+  },
+  {
+    "question": "What primary services does the Materials Processing Institute offer to the global steel industry?",
+    "ground_truth": "The Materials Processing Institute provides independent research, consultancy, technical support, pilot production, and up-scaling services to the global steel industry. They specialize in primary processes like iron and steelmaking, product development, and rolling mill technologies.",
+    "source_file": "pdf_b.pdf"
+  },
+  {
+    "question": "How does the Institute support clients in developing new steel products without disrupting normal production?",
+    "ground_truth": "The Institute operates tonnage-scale melting and casting facilities, including fully instrumented pilot facilities that replicate full-scale steel plants. This allows clients to test next-generation process developments and produce pilot quantities of new steel grades in a controlled off-line environment, away from the risks and pressures of active tonnage production.",
+    "source_file": "pdf_b.pdf"
+  },
+  {
+    "question": "What role does the Institute's Process Simulation and Design capability play in steel manufacturing?",
+    "ground_truth": "Process simulation utilizes techniques like Computational Fluid Dynamics (CFD), Finite Element Method (FEM), and extensive physical modeling. These methods combine to give the Institute a fundamental understanding of actual plant operations, helping to drive process improvements based on sound, data-backed knowledge.",
+    "source_file": "pdf_b.pdf"
+  },
+  {
+    "question": "In what ways does the Institute assist in the area of Coal, Coke, and Raw Materials?",
+    "ground_truth": "The Institute provides pilot and laboratory-scale equipment for characterizing coal, its transformation to coke, and subsequent evaluation. This expertise helps the steel industry understand and control input materials, and it assists coal mining companies in meeting their clients' needs using tools like a fully instrumented moving wall coke oven.",
+    "source_file": "pdf_b.pdf"
+  },
+  {
+    "question": "What resources does the Institute employ to investigate the root causes of production defects?",
+    "ground_truth": "The Institute's metallography laboratory includes a wide range of optical microscopy equipment, complemented by a state-of-the-art Field Emission Gun Scanning Electron Microscope (FEG-SEM). Combined with experienced scientists, this equipment enables fundamental forensic investigations into typical and novel production defects, often leading to comprehensive solutions through process engineering.",
+    "source_file": "pdf_b.pdf"
+  },
+  {
+    "question": "What specific allegations of domestic abuse did the patient disclose regarding his husband?",
+    "ground_truth": "The patient disclosed that his husband had been physically assaulting him by hitting and kicking him for approximately six months. Additionally, the husband has been controlling him by calling him names and not allowing him to go out unaccompanied, leading to the patient becoming increasingly isolated.",
+    "source_file": "pdf_handwritten.pdf"
+  },
+  {
+    "question": "How does the patient's physical condition affect his vulnerability in this situation?",
+    "ground_truth": "The patient suffers from muscular atrophy and relies on a wheelchair for mobility. Because of these physical limitations, he is highly dependent on his husband to meet his daily needs, which severely heightens his vulnerability to the alleged abuse.",
+    "source_file": "pdf_handwritten.pdf"
+  },
+  {
+    "question": "What are the patient's views and wishes regarding the abuse and his future?",
+    "ground_truth": "The patient expressed that he wants to feel safe, as he is currently frightened of returning home upon discharge and does not know where to turn. He is willing to accept support to understand his options, though he is currently unsure if he wants to officially end his marriage.",
+    "source_file": "pdf_handwritten.pdf"
+  },
+  {
+    "question": "Have any immediate actions been taken to reduce the potential for further abuse, and what is the patient's current living situation?",
+    "ground_truth": "The patient currently remains in the hospital, where he states his husband is not abusive during visits. To reduce future risks upon his eventual discharge, the patient has agreed to a referral to Harbour Support Services.",
+    "source_file": "pdf_handwritten.pdf"
+  },
+  {
+    "question": "Why has the alleged perpetrator not been informed about this concern form?",
+    "ground_truth": "The alleged perpetrator, the patient's husband, is unaware of the concern because the medical staff deemed it unsafe to discuss it with him. Informing the husband could potentially trigger retaliation and put the patient at further risk of physical or psychological harm.",
+    "source_file": "pdf_handwritten.pdf"
+  },
+  {
+    "question": "According to the report, what is the primary function of the International Court of Justice (ICJ)?",
+    "ground_truth": "The primary function of the International Court of Justice is to settle, in accordance with international law, legal disputes submitted to it by States. It also exercises advisory jurisdiction by providing advisory opinions on legal questions referred to it by authorized United Nations organs and specialized agencies.",
+    "source_file": "pdf_long_arabic.pdf"
+  },
+  {
+    "question": "What action did the Court take regarding the dispute over the 1899 Arbitral Award between Guyana and Venezuela in its Order of May 1, 2025?",
+    "ground_truth": "In its Order of May 1, 2025, the Court reaffirmed the provisional measures it had previously indicated to protect the disputed territory. Additionally, it indicated a new provisional measure explicitly ordering Venezuela to refrain from holding or preparing for elections in the disputed territory currently administered and controlled by Guyana.",
+    "source_file": "pdf_long_arabic.pdf"
+  },
+  {
+    "question": "What was the outcome of the preliminary objections raised by Azerbaijan in its dispute with Armenia over the Convention on the Elimination of All Forms of Racial Discrimination?",
+    "ground_truth": "On November 12, 2024, the Court delivered its Judgment officially rejecting the two preliminary objections raised by Azerbaijan. Consequently, the Court declared that it successfully has jurisdiction, on the basis of Article 22 of the Convention, to entertain the Application filed by Armenia.",
+    "source_file": "pdf_long_arabic.pdf"
+  },
+  {
+    "question": "What obligations did the Court identify regarding climate change in its Advisory Opinion of July 23, 2025?",
+    "ground_truth": "The Court unanimously opined that States have binding obligations under both climate change treaties and customary international law to protect the climate system and environment from anthropogenic greenhouse gas emissions. This specifically includes the duty to exercise due diligence to prevent significant environmental harm and to cooperate in good faith to mitigate climate change.",
+    "source_file": "pdf_long_arabic.pdf"
+  },
+  {
+    "question": "How did the Court address the application of the Genocide Convention in the case between South Africa and Israel?",
+    "ground_truth": "South Africa instituted proceedings alleging that Israel's actions in the Gaza Strip violated the Genocide Convention, leading the Court to issue and repeatedly reaffirm several provisional measures. These measures ordered Israel to take all possible steps to prevent acts of genocide, ensure the unhindered provision of humanitarian assistance, and halt any military offensive in the Rafah governorate that could inflict conditions leading to the physical destruction of the Palestinian group.",
+    "source_file": "pdf_long_arabic.pdf"
+  }
+]

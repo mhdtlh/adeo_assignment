@@ -156,7 +156,9 @@ def process_query(ch, method, properties, body):
                 citations.append({
                     "file_name": node.node.metadata.get('file_name', 'Unknown File'),
                     "page_label": node.node.metadata.get('page_label', 'N/A'),
-                    "score": getattr(node, 'score', None)
+                    "score": getattr(node, 'score', None),
+                    "document_id": getattr(node.node, 'ref_doc_id', 'Unknown'), # <--- NEW: Parent Document ID
+                    "chunk_id": getattr(node.node, 'node_id', 'Unknown')        # <--- NEW: Specific Chunk ID
                 })
                 
             final_answer = str(response.response)

@@ -18,6 +18,7 @@ os.makedirs(log_dir, exist_ok=True)
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+    force=True,
     handlers=[
         logging.StreamHandler(), # Keeps logs flowing to Docker stdout
         logging.FileHandler(os.path.join(log_dir, "gateway.log")) # Saves to file
@@ -42,6 +43,8 @@ class Citation(BaseModel):
     file_name: str
     page_label: str
     score: Optional[float] = None
+    document_id: Optional[str] = None
+    chunk_id: Optional[str] = None
 
 class ResultPayload(BaseModel):
     status: str

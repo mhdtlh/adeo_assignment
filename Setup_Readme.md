@@ -391,3 +391,129 @@ This will permanently delete:
 This reset is needed when you want to upload data again from scratch
 ---
 
+# 📊 Running Evaluation
+
+The ADEO Hybrid RAG system includes a **dedicated Evaluation Service** to assess the performance of the RAG pipeline.
+
+The evaluation engine runs queries from a dataset, evaluates responses using an **LLM-as-a-judge**, and generates a report.
+
+---
+
+## 🚀 Trigger Evaluation
+
+Run the following command to start evaluation:
+
+```bash
+curl -X POST http://localhost:8003/trigger_evaluation
+```
+
+This will:
+
+* Load evaluation dataset
+* Send queries to API Gateway
+* Retrieve responses
+* Evaluate responses
+* Generate evaluation report
+
+---
+
+## 📄 Fetch Evaluation Report
+
+Once evaluation is complete, fetch the report using:
+
+```bash
+curl http://localhost:8003/report
+```
+
+This returns:
+
+* Evaluation scores
+* Responses
+* Metrics summary
+* Latency information
+
+---
+
+## 📊 Evaluation Metrics
+
+The evaluation engine measures:
+
+* **Relevance** — Does the answer address the question?
+* **Faithfulness** — Is the answer grounded in retrieved context?
+* **Accuracy** — Does the answer match expected response?
+* **Latency** — Response time
+
+---
+
+## 🐳 Evaluation Service
+
+| Service    | Port |
+| ---------- | ---- |
+| Evaluation | 8003 |
+
+Service Location:
+
+```
+services/evaluation
+```
+
+---
+
+## 📈 Evaluation Flow
+
+```mermaid
+sequenceDiagram
+    autonumber
+
+    User->>Evaluation: Trigger evaluation
+    Evaluation->>Dataset: Load questions
+    Evaluation->>API Gateway: Send queries
+    API Gateway->>Agent: Process
+
+    Agent->>Evaluation: Response
+    Evaluation->>LLM Judge: Score
+
+    Evaluation->>Report: Generate report
+```
+
+---
+
+# ▶️ Running Evaluation Service
+
+## Using Docker Compose
+
+```bash
+docker-compose -f services/evaluation/docker-compose.yml up -d --build
+```
+
+---
+
+## Using Startup Scripts
+
+If using full system startup:
+
+### Linux / Mac
+
+```bash
+./start.sh
+```
+
+### Windows
+
+```powershell
+./start.ps1
+```
+
+This automatically starts the evaluation service along with other services.
+
+---
+
+## Verify Evaluation Service
+
+Check service health:
+
+```bash
+curl http://localhost:8003/health
+```
+
+---

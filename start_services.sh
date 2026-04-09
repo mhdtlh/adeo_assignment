@@ -24,6 +24,7 @@ docker-compose -f services/api_gateway/docker-compose.yml up -d --build
 docker-compose -f services/agent/docker-compose.yml up -d --build
 docker-compose -f services/ingestion/docker-compose.yml up -d --build
 docker-compose -f services/ui/docker-compose.yml up -d --build
+docker-compose -f services/evaluation/docker-compose.yml up -d --build
 
 echo "✅ All systems are GO!"
 echo "👉 UI: http://localhost:8501"

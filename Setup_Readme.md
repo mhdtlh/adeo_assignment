@@ -51,6 +51,7 @@ This will:
 * Build base Docker image
 * Start infrastructure containers
 * Start all services
+* It will take take about 25 mins for all the containers to build and get up running
 
 ---
 

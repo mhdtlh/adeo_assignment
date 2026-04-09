@@ -1,0 +1,907 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////wsl.localhost/Ubuntu/home/talhajaved/.vscode-server/extensions/shd101wyy.markdown-preview-enhanced-0.8.22/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      <script type="text/javascript" src="file:////wsl.localhost/Ubuntu/home/talhajaved/.vscode-server/extensions/shd101wyy.markdown-preview-enhanced-0.8.22/crossnote/dependencies/mermaid/mermaid.min.js" charset="UTF-8"></script>
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script>
+    </head>
+    <body for="html-export">
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="-adeo-hybrid-rag-system">🧠 ADEO Hybrid RAG System </h1>
+<h2 id="-overview">📌 Overview </h2>
+<p><strong>ADEO Hybrid RAG System</strong> is a <strong>production-ready, microservices-based Retrieval Augmented Generation (RAG) platform</strong> designed to intelligently answer questions from <strong>multilingual, handwritten, and electronic documents</strong> using a <strong>Hybrid Retrieval architecture (Vector + Knowledge Graph + Web fallback)</strong>.</p>
+<p>The system leverages <strong>LlamaIndex orchestration</strong>, <strong>Groq LLM</strong>, <strong>ChromaDB vector search</strong>, and <strong>Neo4j knowledge graphs</strong> to deliver <strong>accurate, contextual, and grounded responses</strong>.</p>
+<p>Additionally, the platform includes a <strong>built-in Evaluation Engine</strong> that automatically assesses the performance of the RAG system using <strong>LLM-based scoring metrics</strong> such as relevance, faithfulness, and accuracy.</p>
+<hr>
+<h2 id="-purpose">🎯 Purpose </h2>
+<p>This repository provides a <strong>scalable and production-ready framework</strong> for:</p>
+<ul>
+<li>Building Hybrid RAG systems</li>
+<li>Processing multilingual documents (Arabic, handwritten, electronic PDFs)</li>
+<li>Combining vector search with knowledge graphs</li>
+<li>Implementing microservices-based GenAI architectures</li>
+<li>Evaluating RAG performance automatically</li>
+<li>Deploying scalable AI systems using Docker</li>
+</ul>
+<hr>
+<h2 id="-key-capabilities">✨ Key Capabilities </h2>
+<ul>
+<li>Hybrid Retrieval (Vector + Graph + Web)</li>
+<li>Multilingual Document Support</li>
+<li>Handwritten Document Processing</li>
+<li>Built-in Evaluation Engine</li>
+<li>Microservices Architecture</li>
+<li>Scalable Docker Deployment</li>
+<li>Production-Ready Logging &amp; Monitoring</li>
+</ul>
+<hr>
+<p>Production-ready <strong>Hybrid RAG Microservices Platform</strong> supporting:</p>
+<ul>
+<li>Vector RAG</li>
+<li>Graph RAG</li>
+<li>Web fallback</li>
+<li>Evaluation engine</li>
+<li>Multilingual documents</li>
+<li>Handwritten PDFs</li>
+<li>Arabic PDFs</li>
+</ul>
+<hr>
+<h1 id="-key-features">🚀 Key Features </h1>
+<p>✅ Hybrid RAG (Vector + Graph)<br>
+✅ Evaluation Engine<br>
+✅ Multilingual Support<br>
+✅ Arabic PDF Support<br>
+✅ Handwritten PDF Support<br>
+✅ Dockerized Microservices<br>
+✅ Shared Docker Base Image<br>
+✅ Combined Requirements<br>
+✅ Smart Ingestion<br>
+✅ Duplicate Handling<br>
+✅ Async Processing<br>
+✅ Scalable Architecture</p>
+<hr>
+<h1 id="️-system-architecture">🏗️ System Architecture </h1>
+<div class="mermaid">flowchart TB
+
+User --&gt; UI
+UI --&gt; Gateway
+
+Gateway --&gt; RabbitMQ
+RabbitMQ --&gt; Agent
+
+Agent --&gt; ChromaDB
+Agent --&gt; Neo4j
+Agent --&gt; Tavily
+
+Gateway --&gt; Redis
+
+Evaluation --&gt; Gateway
+
+subgraph Microservices
+UI
+Gateway
+Agent
+Ingestion
+Evaluation
+end
+
+subgraph Infrastructure
+ChromaDB
+Neo4j
+RabbitMQ
+Redis
+end
+</div><hr>
+<h1 id="-ingestion-service">📥 Ingestion Service </h1>
+<p>The <strong>Ingestion Service</strong> is responsible for processing documents and preparing them for retrieval in the Hybrid RAG pipeline.</p>
+<p>It converts raw documents into structured data that can be used by:</p>
+<ul>
+<li>Vector Database (ChromaDB)</li>
+<li>Knowledge Graph (Neo4j)</li>
+</ul>
+<hr>
+<h2 id="-purpose-1">🎯 Purpose </h2>
+<p>The ingestion service performs the following tasks:</p>
+<ul>
+<li>Upload documents</li>
+<li>Parse PDFs</li>
+<li>Chunk documents</li>
+<li>Generate embeddings</li>
+<li>Store in vector database</li>
+<li>Extract entities</li>
+<li>Build knowledge graph</li>
+</ul>
+<hr>
+<h2 id="️-how-ingestion-works">⚙️ How Ingestion Works </h2>
+<ol>
+<li>User uploads documents</li>
+<li>Documents are parsed using LlamaParse</li>
+<li>Parsed text is chunked</li>
+<li>Embeddings are generated</li>
+<li>Embeddings stored in ChromaDB</li>
+<li>Entities extracted for knowledge graph</li>
+<li>Graph stored in Neo4j</li>
+</ol>
+<hr>
+<h2 id="-apis">🔌 APIs </h2>
+<h3 id="upload-documents">Upload Documents </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>POST /upload
+</code></pre><p>Uploads documents for ingestion.</p>
+<hr>
+<h3 id="trigger-ingestion">Trigger Ingestion </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>POST /ingest
+</code></pre><p>Triggers ingestion pipeline.</p>
+<hr>
+<h3 id="health-check">Health Check </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>GET /health
+</code></pre><hr>
+<h2 id="-ingestion-flow">📊 Ingestion Flow </h2>
+<div class="mermaid">sequenceDiagram
+    autonumber
+
+    User-&gt;&gt;UI: Upload PDF
+    UI-&gt;&gt;Ingestion: Upload
+
+    Ingestion-&gt;&gt;Parser: LlamaParse
+    Parser-&gt;&gt;Ingestion: Parsed Text
+
+    Ingestion-&gt;&gt;Embedding: Generate Embeddings
+    Embedding-&gt;&gt;ChromaDB: Store
+
+    Ingestion-&gt;&gt;Graph: Extract Entities
+    Graph-&gt;&gt;Neo4j: Store
+</div><hr>
+<h2 id="-duplicate-handling">🔁 Duplicate Handling </h2>
+<p>The ingestion service avoids duplicate indexing by:</p>
+<ul>
+<li>Checking existing files</li>
+<li>Using ingestion cache</li>
+<li>Comparing file hashes</li>
+</ul>
+<p>This improves performance and avoids redundant indexing.</p>
+<hr>
+<h2 id="-container">🐳 Container </h2>
+<p>Service:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>services/ingestion
+</code></pre><p>Container:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>adeo_ingestion
+</code></pre><p>Port:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>8002
+</code></pre><hr>
+<h2 id="-why-separate-ingestion-service">🧠 Why Separate Ingestion Service </h2>
+<p>Separating ingestion provides:</p>
+<ul>
+<li>Independent scaling</li>
+<li>Batch ingestion</li>
+<li>Better performance</li>
+<li>Cleaner architecture</li>
+</ul>
+<hr>
+<h1 id="-query-flow">🔁 Query Flow </h1>
+<div class="mermaid">sequenceDiagram
+autonumber
+
+User-&gt;&gt;UI: Ask question
+UI-&gt;&gt;Gateway: Query
+
+Gateway-&gt;&gt;RabbitMQ: Push task
+RabbitMQ-&gt;&gt;Agent: Consume
+
+Agent-&gt;&gt;ChromaDB: Vector Search
+Agent-&gt;&gt;Neo4j: Graph Search
+
+alt High confidence
+Agent-&gt;&gt;Gateway: Response
+else Low confidence
+Agent-&gt;&gt;Tavily: Web search
+Tavily-&gt;&gt;Agent: Results
+Agent-&gt;&gt;Gateway: Response
+end
+
+Gateway-&gt;&gt;Redis: Store
+UI-&gt;&gt;Gateway: Poll
+Gateway-&gt;&gt;UI: Response
+</div><hr>
+<h1 id="-models-used">🧠 Models Used </h1>
+<h2 id="-embedding-model">🔎 Embedding Model </h2>
+<p><strong>intfloat/multilingual-e5-small</strong></p>
+<h3 id="why-this-model">Why this model? </h3>
+<ul>
+<li>🌍 <strong>Multilingual Support</strong> — Handles Arabic, English, and mixed-language documents</li>
+<li>✍️ <strong>Better OCR Compatibility</strong> — Works well with handwritten and noisy text extracted from PDFs</li>
+<li>⚡ <strong>Lightweight &amp; Fast</strong> — Small model size enables faster ingestion and retrieval</li>
+<li>💻 <strong>On-Prem Friendly</strong> — Can be deployed locally without heavy GPU requirements</li>
+<li>🔄 <strong>Flexible</strong> — Can easily be replaced with larger models (e.g., <code>bge-m3</code>, <code>e5-large</code>, etc.) if higher accuracy is needed</li>
+</ul>
+<p>This makes the model ideal for:</p>
+<ul>
+<li>Arabic PDFs</li>
+<li>Handwritten PDFs</li>
+<li>Electronic PDFs</li>
+<li>Multilingual documents</li>
+</ul>
+<hr>
+<h2 id="-llm">🤖 LLM </h2>
+<p><strong>llama-3.3-70b-versatile (via Groq)</strong></p>
+<h3 id="why-this-model-1">Why this model? </h3>
+<ul>
+<li>🔐 <strong>API Security</strong> — Groq provides secure and reliable API infrastructure</li>
+<li>💰 <strong>Low Cost</strong> — More cost-efficient compared to many hosted LLM providers</li>
+<li>⚡ <strong>High Performance</strong> — Extremely fast inference using Groq hardware</li>
+<li>🔓 <strong>Open-Source Model</strong> — Based on open models allowing flexibility</li>
+<li>🏢 <strong>On-Prem Replication</strong> — Can be replicated locally or deployed on-prem if required</li>
+<li>📈 <strong>Strong RAG Performance</strong> — Good reasoning and grounding capabilities for RAG systems</li>
+</ul>
+<p>Used for:</p>
+<ul>
+<li>Query Answering</li>
+<li>Graph Extraction</li>
+<li>Context Condensation</li>
+<li>Web Search Synthesis</li>
+<li>Evaluation Engine (LLM-as-a-Judge)</li>
+</ul>
+<hr>
+<hr>
+<h1 id="-supported-document-types">📄 Supported Document Types </h1>
+<p>This system supports:</p>
+<ol>
+<li>Arabic PDF</li>
+<li>Handwritten PDF</li>
+<li>Electronic PDF</li>
+<li>Electronic PDF</li>
+</ol>
+<hr>
+<hr>
+<h1 id="-document-parsing">📄 Document Parsing </h1>
+<h2 id="-parser-used">🧩 Parser Used </h2>
+<p><strong>LlamaParse</strong></p>
+<h3 id="why-llamaparse">Why LlamaParse? </h3>
+<p>LlamaParse was selected as the document parsing engine due to its ability to handle <strong>complex and diverse PDF formats</strong> effectively.</p>
+<h3 id="key-advantages">Key Advantages </h3>
+<ul>
+<li>
+<p>📝 <strong>Handwritten Document Support</strong><br>
+Accurately extracts text from handwritten PDFs using advanced parsing capabilities.</p>
+</li>
+<li>
+<p>🌍 <strong>Multilingual Support</strong><br>
+Works well with <strong>Arabic</strong>, <strong>English</strong>, and mixed-language documents.</p>
+</li>
+<li>
+<p>📊 <strong>Complex Layout Handling</strong><br>
+Supports:</p>
+<ul>
+<li>Tables</li>
+<li>Multi-column layouts</li>
+<li>Headers &amp; footers</li>
+<li>Structured documents</li>
+</ul>
+</li>
+<li>
+<p>📄 <strong>Better than Traditional OCR</strong><br>
+Produces cleaner structured output compared to standard OCR tools.</p>
+</li>
+<li>
+<p>🔗 Optimized for <strong>LlamaIndex Integration</strong><br>
+Directly integrates with LlamaIndex ingestion pipelines.</p>
+</li>
+<li>
+<p>⚡ <strong>High Quality Markdown Output</strong><br>
+Converts documents into structured markdown for better chunking and retrieval.</p>
+</li>
+</ul>
+<h3 id="why-it-fits-this-project">Why it fits this project </h3>
+<p>The ADEO Hybrid RAG system processes:</p>
+<ul>
+<li>Arabic PDFs</li>
+<li>Handwritten PDFs</li>
+<li>Electronic PDFs</li>
+<li>Mixed-format documents</li>
+</ul>
+<p>LlamaParse provides <strong>robust and consistent parsing</strong> across all these document types, making it ideal for the ingestion pipeline.</p>
+<hr>
+<h1 id="-framework-used">🧠 Framework Used </h1>
+<h2 id="️-llamaindex">⚙️ LlamaIndex </h2>
+<p>The ADEO Hybrid RAG System uses <strong>LlamaIndex</strong> as the core orchestration framework to build and manage the <strong>Hybrid Retrieval-Augmented Generation (RAG)</strong> pipeline.</p>
+<p>LlamaIndex acts as the <strong>central layer</strong> connecting:</p>
+<ul>
+<li>Document parsing</li>
+<li>Embedding generation</li>
+<li>Vector database (ChromaDB)</li>
+<li>Knowledge graph (Neo4j)</li>
+<li>LLM (Groq)</li>
+<li>Query engine</li>
+<li>Memory management</li>
+</ul>
+<hr>
+<h2 id="️-how-llamaindex-is-used">🏗️ How LlamaIndex is Used </h2>
+<p>LlamaIndex is used across multiple stages of the pipeline:</p>
+<h3 id="1-document-ingestion">1. Document Ingestion </h3>
+<p>LlamaIndex is used to:</p>
+<ul>
+<li>Convert parsed documents into structured nodes</li>
+<li>Chunk documents intelligently</li>
+<li>Generate embeddings</li>
+<li>Store embeddings in ChromaDB</li>
+<li>Extract entities for Neo4j graph</li>
+</ul>
+<p>Components used:</p>
+<ul>
+<li><code>Document</code></li>
+<li><code>TokenTextSplitter</code></li>
+<li><code>VectorStoreIndex</code></li>
+<li><code>PropertyGraphIndex</code></li>
+</ul>
+<hr>
+<h3 id="2-hybrid-retrieval-vector--graph">2. Hybrid Retrieval (Vector + Graph) </h3>
+<p>LlamaIndex enables hybrid retrieval using:</p>
+<ul>
+<li>Vector Search → ChromaDB</li>
+<li>Graph Search → Neo4j</li>
+</ul>
+<p>This is implemented using:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>PropertyGraphIndex<span class="token punctuation">.</span>from_existing<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><p>This allows the system to retrieve:</p>
+<ul>
+<li>Semantic matches (vector search)</li>
+<li>Entity relationships (graph search)</li>
+</ul>
+<hr>
+<h3 id="3-query-engine">3. Query Engine </h3>
+<p>LlamaIndex provides the chat-based query engine:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>chat_engine <span class="token operator">=</span> index<span class="token punctuation">.</span>as_chat_engine<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><p>Features:</p>
+<ul>
+<li>Conversational queries</li>
+<li>Context-aware responses</li>
+<li>Memory support</li>
+<li>Hybrid retrieval</li>
+</ul>
+<hr>
+<h3 id="4-memory-management">4. Memory Management </h3>
+<p>LlamaIndex provides conversation memory using:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>ChatMemoryBuffer
+</code></pre><p>This enables:</p>
+<ul>
+<li>Multi-turn conversations</li>
+<li>Context retention</li>
+<li>Better query understanding</li>
+</ul>
+<hr>
+<h3 id="5-embedding-integration">5. Embedding Integration </h3>
+<p>LlamaIndex integrates embedding models easily:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>Settings<span class="token punctuation">.</span>embed_model
+</code></pre><p>Used for:</p>
+<ul>
+<li>Multilingual embeddings</li>
+<li>Semantic retrieval</li>
+</ul>
+<hr>
+<h3 id="6-llm-integration">6. LLM Integration </h3>
+<p>LlamaIndex integrates with Groq:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>Settings<span class="token punctuation">.</span>llm <span class="token operator">=</span> Groq<span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>
+</code></pre><p>Used for:</p>
+<ul>
+<li>Answer generation</li>
+<li>Graph extraction</li>
+<li>Query rewriting</li>
+<li>Evaluation</li>
+</ul>
+<hr>
+<h2 id="-why-llamaindex-was-chosen">🎯 Why LlamaIndex Was Chosen </h2>
+<h3 id="1-native-rag-framework">1. Native RAG Framework </h3>
+<p>LlamaIndex is designed specifically for:</p>
+<ul>
+<li>RAG pipelines</li>
+<li>Document intelligence</li>
+<li>Knowledge retrieval</li>
+</ul>
+<hr>
+<h3 id="2-hybrid-retrieval-support">2. Hybrid Retrieval Support </h3>
+<p>Supports:</p>
+<ul>
+<li>Vector Search</li>
+<li>Graph Search</li>
+<li>Hybrid Retrieval</li>
+</ul>
+<p>This was essential for ADEO Hybrid RAG.</p>
+<hr>
+<h3 id="3-easy-multi-db-integration">3. Easy Multi-DB Integration </h3>
+<p>LlamaIndex integrates easily with:</p>
+<ul>
+<li>ChromaDB</li>
+<li>Neo4j</li>
+<li>Redis</li>
+<li>External APIs</li>
+</ul>
+<hr>
+<h3 id="4-modular-architecture">4. Modular Architecture </h3>
+<p>LlamaIndex allows:</p>
+<ul>
+<li>Swappable models</li>
+<li>Swappable databases</li>
+<li>Swappable parsers</li>
+</ul>
+<p>This keeps the architecture flexible.</p>
+<hr>
+<h3 id="5-production-ready">5. Production Ready </h3>
+<p>LlamaIndex supports:</p>
+<ul>
+<li>Scalable pipelines</li>
+<li>Memory management</li>
+<li>Query orchestration</li>
+<li>Hybrid retrieval</li>
+</ul>
+<hr>
+<h2 id="-benefits-in-this-project">🚀 Benefits in This Project </h2>
+<p>Using LlamaIndex enabled:</p>
+<ul>
+<li>Hybrid RAG architecture</li>
+<li>Faster development</li>
+<li>Cleaner architecture</li>
+<li>Better retrieval accuracy</li>
+<li>Modular design</li>
+</ul>
+<hr>
+<h2 id="-summary">🧠 Summary </h2>
+<p>LlamaIndex acts as the <strong>central intelligence layer</strong> of the ADEO Hybrid RAG system, orchestrating:</p>
+<ul>
+<li>Parsing</li>
+<li>Chunking</li>
+<li>Embedding</li>
+<li>Retrieval</li>
+<li>Memory</li>
+<li>LLM interaction</li>
+</ul>
+<p>This makes the system <strong>modular, scalable, and production-ready</strong>.</p>
+<hr>
+<h1 id="-services--infrastructure">🧩 Services &amp; Infrastructure </h1>
+<p>The ADEO Hybrid RAG system is built using a <strong>microservices architecture</strong> where each component runs in <strong>separate Docker containers</strong>. This ensures modularity, scalability, and easier maintenance.</p>
+<hr>
+<h2 id="-containerized-architecture">🐳 Containerized Architecture </h2>
+<p>Each infrastructure and service component runs in its <strong>own Docker container</strong>:</p>
+<h3 id="infrastructure-containers">Infrastructure Containers </h3>
+<ul>
+<li><strong>ChromaDB</strong> — Vector Database</li>
+<li><strong>Neo4j</strong> — Knowledge Graph Database</li>
+<li><strong>Redis</strong> — Result Cache</li>
+<li><strong>RabbitMQ</strong> — Message Queue</li>
+</ul>
+<h3 id="service-containers">Service Containers </h3>
+<ul>
+<li><strong>UI Service</strong> — Streamlit frontend</li>
+<li><strong>API Gateway</strong> — Request orchestration</li>
+<li><strong>Agent Service</strong> — Hybrid RAG processing</li>
+<li><strong>Ingestion Service</strong> — Document ingestion</li>
+<li><strong>Evaluation Service</strong> — RAG evaluation engine</li>
+</ul>
+<hr>
+<h2 id="-why-separate-containers">🎯 Why Separate Containers? </h2>
+<p>Running each component in separate containers provides:</p>
+<ul>
+<li>Modular architecture</li>
+<li>Independent scaling</li>
+<li>Fault isolation</li>
+<li>Easier debugging</li>
+<li>Cleaner deployments</li>
+<li>Better maintainability</li>
+</ul>
+<p>For example:</p>
+<ul>
+<li>Agent service can scale independently</li>
+<li>Evaluation service can run only when required</li>
+<li>Databases remain persistent</li>
+</ul>
+<hr>
+<h2 id="-shared-base-docker-image">🐳 Shared Base Docker Image </h2>
+<p>All services use a <strong>common base Docker image</strong>:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Dockerfile.base
+</code></pre><p>Each service Dockerfile inherits from:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>FROM adeo-base:latest
+</code></pre><h3 id="advantages">Advantages </h3>
+<ul>
+<li>Avoids duplicate dependency installation</li>
+<li>Faster builds</li>
+<li>Smaller image sizes</li>
+<li>Consistent environments</li>
+<li>Easier maintenance</li>
+</ul>
+<p>This ensures that dependencies from:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>requirements.txt
+</code></pre><p>are installed only <strong>once</strong> and shared across all services.</p>
+<hr>
+<h1 id="-services--ports">🔧 Services &amp; Ports </h1>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Container</th>
+<th>Port</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UI</td>
+<td>adeo_ui</td>
+<td>8501</td>
+<td>Streamlit UI</td>
+</tr>
+<tr>
+<td>API Gateway</td>
+<td>adeo_api_gateway</td>
+<td>8001</td>
+<td>Entry point for queries</td>
+</tr>
+<tr>
+<td>Ingestion</td>
+<td>adeo_ingestion</td>
+<td>8002</td>
+<td>Document ingestion</td>
+</tr>
+<tr>
+<td>Evaluation</td>
+<td>adeo_evaluation</td>
+<td>8003</td>
+<td>RAG evaluation</td>
+</tr>
+<tr>
+<td>ChromaDB</td>
+<td>adeo_chromadb</td>
+<td>8000</td>
+<td>Vector DB</td>
+</tr>
+<tr>
+<td>Neo4j</td>
+<td>adeo_neo4j</td>
+<td>7474 / 7687</td>
+<td>Graph DB</td>
+</tr>
+<tr>
+<td>Redis</td>
+<td>adeo_redis</td>
+<td>6379</td>
+<td>Cache</td>
+</tr>
+<tr>
+<td>RabbitMQ</td>
+<td>adeo_rabbitmq</td>
+<td>5672 / 15672</td>
+<td>Queue</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="-apis-exposed">🔌 APIs Exposed </h1>
+<h2 id="api-gateway">API Gateway </h2>
+<h3 id="submit-query">Submit Query </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>POST /query
+</code></pre><h3 id="get-result">Get Result </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>GET /result/{request_id}
+</code></pre><h3 id="health-check-1">Health Check </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>GET /health
+</code></pre><hr>
+<h2 id="ingestion-service">Ingestion Service </h2>
+<h3 id="upload-file">Upload File </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>POST /upload
+</code></pre><h3 id="trigger-ingestion-1">Trigger Ingestion </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>POST /ingest
+</code></pre><h3 id="health">Health </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>GET /health
+</code></pre><hr>
+<h2 id="evaluation-service">Evaluation Service </h2>
+<h3 id="trigger-evaluation">Trigger Evaluation </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>POST /trigger_evaluation
+</code></pre><h3 id="get-evaluation-report">Get Evaluation Report </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>GET /report
+</code></pre><hr>
+<h2 id="ui-service">UI Service </h2>
+<ul>
+<li>Upload documents</li>
+<li>Query system</li>
+<li>View citations</li>
+</ul>
+<hr>
+<h2 id="agent-service">Agent Service </h2>
+<p>Agent service is an internal worker that:</p>
+<ul>
+<li>Consumes RabbitMQ messages</li>
+<li>Performs Hybrid RAG</li>
+<li>Calls LLM</li>
+<li>Returns results to API Gateway</li>
+</ul>
+<p>This service does not expose external APIs.</p>
+<hr>
+<h1 id="-microservices-flow">🧠 Microservices Flow </h1>
+<div class="mermaid">flowchart LR
+
+UI --&gt; API_GATEWAY
+API_GATEWAY --&gt; RabbitMQ
+RabbitMQ --&gt; Agent
+
+Agent --&gt; ChromaDB
+Agent --&gt; Neo4j
+
+API_GATEWAY --&gt; Redis
+
+Evaluation --&gt; API_GATEWAY
+</div><hr>
+<h1 id="-evaluation-engine">📊 Evaluation Engine </h1>
+<p>The ADEO Hybrid RAG system includes a <strong>dedicated Evaluation Service</strong> to automatically assess the performance of the RAG pipeline.</p>
+<p>The evaluation engine runs as a <strong>separate microservice</strong> and communicates with the <strong>API Gateway</strong> to test the system end‑to‑end.</p>
+<hr>
+<h2 id="-purpose-of-evaluation-engine">🎯 Purpose of Evaluation Engine </h2>
+<p>The evaluation engine is used to:</p>
+<ul>
+<li>Measure RAG performance</li>
+<li>Identify hallucinations</li>
+<li>Validate retrieval quality</li>
+<li>Benchmark system improvements</li>
+<li>Compare model performance</li>
+<li>Track system accuracy over time</li>
+</ul>
+<hr>
+<h2 id="-evaluation-service-architecture">🧩 Evaluation Service Architecture </h2>
+<p>The evaluation engine runs as a <strong>separate Docker container</strong>:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>services/evaluation
+</code></pre><p>Container:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>adeo_evaluation
+</code></pre><p>Port:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>8003
+</code></pre><hr>
+<h2 id="️-how-evaluation-works">⚙️ How Evaluation Works </h2>
+<p>The evaluation engine:</p>
+<ol>
+<li>Loads evaluation dataset</li>
+<li>Sends queries to API Gateway</li>
+<li>Retrieves generated responses</li>
+<li>Uses LLM as judge</li>
+<li>Scores responses</li>
+<li>Generates evaluation report</li>
+</ol>
+<hr>
+<h2 id="-evaluation-flow">📊 Evaluation Flow </h2>
+<div class="mermaid">sequenceDiagram
+    autonumber
+
+    Evaluation-&gt;&gt;Dataset: Load Questions
+    Evaluation-&gt;&gt;API Gateway: Send Query
+    API Gateway-&gt;&gt;Agent: Process Query
+
+    Agent-&gt;&gt;Evaluation: Return Response
+
+    Evaluation-&gt;&gt;LLM Judge: Evaluate Answer
+    LLM Judge-&gt;&gt;Evaluation: Scores
+
+    Evaluation-&gt;&gt;Report: Save JSON Report
+</div><hr>
+<h3 id="eval_datasetjson">eval_dataset.json </h3>
+<p>Contains:</p>
+<ul>
+<li>Questions</li>
+<li>Ground truth answers</li>
+</ul>
+<h3 id="evaluation_reportjson">evaluation_report.json </h3>
+<p>Generated report containing:</p>
+<ul>
+<li>Scores</li>
+<li>Latency</li>
+<li>Responses</li>
+<li>Summary metrics</li>
+</ul>
+<hr>
+<h2 id="-llmasajudge">🧠 LLM‑as‑a‑Judge </h2>
+<p>The evaluation engine uses:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>llama-3.3-70b-versatile
+</code></pre><p>This model evaluates:</p>
+<ul>
+<li>Relevance</li>
+<li>Faithfulness</li>
+<li>Accuracy</li>
+</ul>
+<hr>
+<h2 id="-evaluation-metrics">📈 Evaluation Metrics </h2>
+<h3 id="relevance">Relevance </h3>
+<p>Does the answer address the user question?</p>
+<h3 id="faithfulness">Faithfulness </h3>
+<p>Is the answer grounded in retrieved context?</p>
+<p>Detects hallucinations.</p>
+<h3 id="accuracy">Accuracy </h3>
+<p>Does answer match ground truth?</p>
+<h3 id="latency">Latency </h3>
+<p>Measures system response time.</p>
+<hr>
+<h2 id="-evaluation-apis">🔌 Evaluation APIs </h2>
+<h3 id="trigger-evaluation-1">Trigger Evaluation </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>POST /trigger_evaluation
+</code></pre><p>Runs evaluation in background.</p>
+<hr>
+<h3 id="get-evaluation-report-1">Get Evaluation Report </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>GET /report
+</code></pre><p>Returns generated report.</p>
+<hr>
+<h2 id="-why-separate-evaluation-service">🚀 Why Separate Evaluation Service? </h2>
+<p>Running evaluation as a separate service provides:</p>
+<ul>
+<li>Independent benchmarking</li>
+<li>No impact on production queries</li>
+<li>Scalable evaluation</li>
+<li>Batch testing</li>
+<li>Model comparison</li>
+</ul>
+<hr>
+<h2 id="-evaluation-architecture">🧠 Evaluation Architecture </h2>
+<div class="mermaid">flowchart LR
+
+Evaluation --&gt; API_GATEWAY
+API_GATEWAY --&gt; Agent
+
+Agent --&gt; Evaluation
+
+Evaluation --&gt; LLM_Judge
+Evaluation --&gt; Report
+</div><hr>
+<h1 id="️-ui-service">🖥️ UI Service </h1>
+<p>The <strong>UI Service</strong> provides a simple and interactive interface to interact with the <strong>ADEO Hybrid RAG System</strong>. It is built using <strong>Streamlit</strong> and allows users to upload documents, query the system, and view responses.</p>
+<hr>
+<h2 id="-purpose-2">🎯 Purpose </h2>
+<p>The UI Service enables users to:</p>
+<ul>
+<li>Upload documents</li>
+<li>Trigger ingestion</li>
+<li>Ask questions</li>
+<li>View responses</li>
+<li>Monitor system status</li>
+</ul>
+<hr>
+<h2 id="️-features">⚙️ Features </h2>
+<h3 id="-document-upload">📄 Document Upload </h3>
+<p>Users can upload:</p>
+<ul>
+<li>Arabic PDFs</li>
+<li>Handwritten PDFs</li>
+<li>Electronic PDFs</li>
+<li>Multilingual documents</li>
+</ul>
+<p>Uploaded files are sent to the <strong>Ingestion Service</strong> for processing.</p>
+<hr>
+<h3 id="-query-interface">💬 Query Interface </h3>
+<p>Users can ask questions using the chat interface.</p>
+<p>The UI sends queries to the <strong>API Gateway</strong>, which then triggers the Hybrid RAG pipeline.</p>
+<hr>
+<h3 id="-response-display">📊 Response Display </h3>
+<p>The UI displays:</p>
+<ul>
+<li>Generated answers</li>
+<li>Citations (if enabled)</li>
+<li>Processing status</li>
+</ul>
+<hr>
+<h3 id="-status-updates">🔄 Status Updates </h3>
+<p>The UI polls the API Gateway to:</p>
+<ul>
+<li>Check request status</li>
+<li>Retrieve results</li>
+</ul>
+<p>This ensures <strong>non-blocking query execution</strong>.</p>
+<hr>
+<h2 id="-ui-communication-flow">🔌 UI Communication Flow </h2>
+<div class="mermaid">sequenceDiagram
+    autonumber
+
+    User-&gt;&gt;UI: Upload Document
+    UI-&gt;&gt;Ingestion: POST /upload
+
+    User-&gt;&gt;UI: Ask Question
+    UI-&gt;&gt;API Gateway: POST /query
+
+    API Gateway-&gt;&gt;UI: Request ID
+
+    UI-&gt;&gt;API Gateway: GET /result
+    API Gateway-&gt;&gt;UI: Response
+</div><hr>
+<h2 id="-container-1">🐳 Container </h2>
+<p>Service Location:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>services/ui
+</code></pre><p>Container Name:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>adeo_ui
+</code></pre><p>Port:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>8501
+</code></pre><p>Access URL:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>http://localhost:8501
+</code></pre><hr>
+<h2 id="-why-streamlit">🧠 Why Streamlit? </h2>
+<p>Streamlit was chosen because:</p>
+<ul>
+<li>Fast UI development</li>
+<li>Lightweight</li>
+<li>Python-based</li>
+<li>Easy integration with backend services</li>
+<li>Suitable for internal tools</li>
+</ul>
+<hr>
+<h2 id="-ui-role-in-architecture">🧩 UI Role in Architecture </h2>
+<p>The UI acts as the <strong>entry point</strong> for users and connects to:</p>
+<ul>
+<li>API Gateway</li>
+<li>Ingestion Service</li>
+</ul>
+<p>This keeps the UI lightweight and stateless.</p>
+<hr>
+<h2 id="-ui-architecture">🧠 UI Architecture </h2>
+<div class="mermaid">flowchart LR
+
+User --&gt; UI
+UI --&gt; API_GATEWAY
+UI --&gt; Ingestion
+
+API_GATEWAY --&gt; Agent
+</div><hr>
+<h1 id="-getting-started">🚀 Getting Started </h1>
+<p>This section explains how to <strong>set up the repository</strong>, <strong>start services</strong>, <strong>ingest documents</strong>, and <strong>query the system</strong>.<br>
+THis section is detailed in a separate file with the name <code>Readme_Setup.md</code>.</p>
+
+      </div>
+      
+      
+    
+    
+    <script type="module">
+// TODO: If ZenUML gets integrated into mermaid in the future,
+//      we can remove the following lines.
+
+
+var MERMAID_CONFIG = ({"startOnLoad":false});
+if (typeof MERMAID_CONFIG !== 'undefined') {
+  MERMAID_CONFIG.startOnLoad = false
+  MERMAID_CONFIG.cloneCssStyles = false
+  MERMAID_CONFIG.theme = "default"
+}
+
+mermaid.initialize(MERMAID_CONFIG || {})
+if (typeof(window['Reveal']) !== 'undefined') {
+  function mermaidRevealHelper(event) {
+    var currentSlide = event.currentSlide
+    var diagrams = currentSlide.querySelectorAll('div.mermaid')
+    for (var i = 0; i < diagrams.length; i++) {
+      var diagram = diagrams[i]
+      if (!diagram.hasAttribute('data-processed')) {
+        mermaid.init(null, diagram, ()=> {
+          Reveal.slide(event.indexh, event.indexv)
+        })
+      }
+    }
+  }
+  Reveal.addEventListener('slidetransitionend', mermaidRevealHelper)
+  Reveal.addEventListener('ready', mermaidRevealHelper)
+  await mermaid.run({
+    nodes: document.querySelectorAll('div.mermaid')
+  })
+} else {
+  await mermaid.run({
+    nodes: document.querySelectorAll('div.mermaid')
+  })
+}
+</script>
+    
+    
+    
+  
+    </body></html>

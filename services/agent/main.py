@@ -116,11 +116,41 @@ def process_query(ch, method, properties, body):
                 best_score = 1.0 # If we found graph nodes without scores, assume it's a direct entity match
                 
         # --- THE FALLBACK TRIGGER ---
-        SIMILARITY_THRESHOLD = 0 # Change this value to make it more or less strict!
+        SIMILARITY_THRESHOLD = 0.5
+        local_match = False
+        # Change this value to make it more or less strict!
         
         if best_score >= SIMILARITY_THRESHOLD:
-            logger.info(f"Local Knowledge Match found! (Best Score: {best_score:.2f})")
+            logger.info(f"Score {best_score:.2f} >= {SIMILARITY_THRESHOLD}. Running LLM Verification...")
             
+            # Combine the retrieved text for the LLM to verify
+            retrieved_text = "\n\n".join([n.node.get_content() for n in response.source_nodes])
+            
+            # 2nd Gate: LLM Strict Verification
+            verification_prompt = (
+                f"You are a strict data evaluator. Read the following question and the retrieved context.\n"
+                f"Question: {query_str}\n\n"
+                f"Retrieved Context:\n{retrieved_text}\n\n"
+                f"Does the retrieved context explicitly contain the necessary information to answer the question? "
+                f"Answer ONLY with YES or NO."
+            )
+            
+            # Ask the LLM to verify
+            verification_result = Settings.llm.complete(verification_prompt).text.strip().upper()
+            
+            if "YES" in verification_result:
+                logger.info("LLM Verification: YES. Local Knowledge Match confirmed!")
+                local_match = True
+            else:
+                logger.warning(f"LLM Verification: NO. (LLM rejected local context despite score {best_score:.2f})")
+                local_match = False
+        else:
+            logger.warning(f"Low Confidence ({best_score:.2f} < {SIMILARITY_THRESHOLD}). Skipping LLM Verification.")
+            local_match = False
+
+        # --- ROUTING BASED ON DUAL MECHANISM ---
+        if local_match:
+            # We passed BOTH the vector score check AND the LLM verification
             citations = []
             for node in response.source_nodes:
                 citations.append({

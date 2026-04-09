@@ -9,8 +9,8 @@ This section explains how to **set up the repository**, **start services**, **in
 ## 1. Clone Repository
 
 ```bash
-git clone <repo_url>
-cd <repo_name>
+git clone https://github.com/mhdtlh/adeo_assignment.git
+cd adeo_assignment
 ```
 
 ---
@@ -23,6 +23,8 @@ Create a `.env` file in the root directory:
 GROQ_API_KEY=
 TAVILY_API_KEY=
 LLAMA_CLOUD_API_KEY=
+NEO4J_URL=
+NEO4J_USERNAME=
 NEO4J_PASSWORD=
 ```
 
@@ -307,3 +309,84 @@ sequenceDiagram
 | RabbitMQ    | [http://localhost:15672](http://localhost:15672) |
 
 ---
+
+# 🧹 Reset / Delete Database Data
+
+This section explains how to **reset the system** by deleting database data.
+
+This is useful when:
+
+* Re-running ingestion
+* Testing new documents
+* Clearing corrupted data
+* Resetting environment
+
+---
+
+# Option 1 — Using Script (Recommended)
+
+Use the provided script:
+
+### Linux / Mac
+
+```bash
+./remove_data.sh
+```
+
+### Windows
+
+```powershell
+./remove_data.ps1
+```
+
+This script will:
+
+* Stop containers
+* Remove containers
+* Delete database data
+* Clear ingestion cache
+
+---
+
+# Option 2 — Manual Reset
+
+## Stop Containers
+
+```bash
+docker stop adeo_neo4j
+docker rm adeo_neo4j
+
+docker stop adeo_chromadb
+docker rm adeo_chromadb
+```
+
+---
+
+## Delete Database Data
+
+```bash
+sudo rm -rf infra/neo4j/neo4j_data
+sudo rm -rf infra/chromadb/chroma_data
+```
+
+---
+
+## Clear Ingestion Cache
+
+```bash
+rm services/ingestion/ingestion_cache.json
+```
+
+---
+
+# ⚠️ Warning
+
+This will permanently delete:
+
+* Vector database (ChromaDB)
+* Graph database (Neo4j)
+* Ingestion cache
+
+This reset is needed when you want to upload data again from scratch
+---
+

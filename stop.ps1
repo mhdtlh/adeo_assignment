@@ -5,6 +5,7 @@ docker-compose -f services/ui/docker-compose.yml down
 docker-compose -f services/ingestion/docker-compose.yml down
 docker-compose -f services/agent/docker-compose.yml down
 docker-compose -f services/api_gateway/docker-compose.yml down
+docker-compose -f services/evaluation/docker-compose.yml down
 
 # Stop Infrastructure
 docker-compose -f infra/neo4j/docker-compose.yml down

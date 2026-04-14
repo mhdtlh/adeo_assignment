@@ -1,0 +1,398 @@
+<!DOCTYPE html><html><head>
+      <title>Setup_Readme</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////wsl.localhost/Ubuntu/home/talhajaved/.vscode-server/extensions/shd101wyy.markdown-preview-enhanced-0.8.22/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      <script type="text/javascript" src="file:////wsl.localhost/Ubuntu/home/talhajaved/.vscode-server/extensions/shd101wyy.markdown-preview-enhanced-0.8.22/crossnote/dependencies/mermaid/mermaid.min.js" charset="UTF-8"></script>
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script>
+    </head>
+    <body for="html-export">
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="-getting-started">🚀 Getting Started </h1>
+<p>This section explains how to <strong>set up the repository</strong>, <strong>start services</strong>, <strong>ingest documents</strong>, and <strong>query the system</strong>.</p>
+<hr>
+<h1 id="-repository-setup">📦 Repository Setup </h1>
+<h2 id="1-clone-repository">1. Clone Repository </h2>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> clone https://github.com/mhdtlh/adeo_assignment.git
+<span class="token builtin class-name">cd</span> adeo_assignment
+</code></pre><hr>
+<h2 id="2-configure-environment-variables">2. Configure Environment Variables </h2>
+<p>Create a <code>.env</code> file in the root directory:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token assign-left variable">GROQ_API_KEY</span><span class="token operator">=</span>
+<span class="token assign-left variable">TAVILY_API_KEY</span><span class="token operator">=</span>
+<span class="token assign-left variable">LLAMA_CLOUD_API_KEY</span><span class="token operator">=</span>
+<span class="token assign-left variable">NEO4J_URL</span><span class="token operator">=</span>
+<span class="token assign-left variable">NEO4J_USERNAME</span><span class="token operator">=</span>
+<span class="token assign-left variable">NEO4J_PASSWORD</span><span class="token operator">=</span>
+</code></pre><hr>
+<h1 id="-start-the-system">🐳 Start the System </h1>
+<h2 id="option-1--using-startup-scripts-recommended">Option 1 — Using Startup Scripts (Recommended) </h2>
+<h3 id="linux--mac">Linux / Mac </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>./start.sh
+</code></pre><h3 id="windows">Windows </h3>
+<pre data-role="codeBlock" data-info="powershell" class="language-powershell powershell"><code><span class="token punctuation">.</span><span class="token operator">/</span><span class="token function">start</span><span class="token punctuation">.</span>ps1
+</code></pre><p>This will:</p>
+<ul>
+<li>Build base Docker image</li>
+<li>Start infrastructure containers</li>
+<li>Start all services</li>
+<li>It will take take about 25 mins for all the containers to build and get up running</li>
+</ul>
+<hr>
+<h1 id="-manual-setup-optional">🛠 Manual Setup (Optional) </h1>
+<h2 id="1-create-docker-network">1. Create Docker Network </h2>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">docker</span> network create adeo_network
+</code></pre><h2 id="2-build-base-docker-image">2. Build Base Docker Image </h2>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">docker</span> build <span class="token parameter variable">-t</span> adeo-base <span class="token parameter variable">-f</span> Dockerfile.base <span class="token builtin class-name">.</span>
+</code></pre><h2 id="3-start-infrastructure">3. Start Infrastructure </h2>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">docker-compose</span> <span class="token parameter variable">-f</span> infra/rabbitmq/docker-compose.yml up <span class="token parameter variable">-d</span>
+
+<span class="token function">docker-compose</span> <span class="token parameter variable">-f</span> infra/redis/docker-compose.yml up <span class="token parameter variable">-d</span>
+
+<span class="token function">docker-compose</span> <span class="token parameter variable">-f</span> infra/chromadb/docker-compose.yml up <span class="token parameter variable">-d</span>
+
+<span class="token function">docker-compose</span> <span class="token parameter variable">-f</span> infra/neo4j/docker-compose.yml up <span class="token parameter variable">-d</span>
+</code></pre><h2 id="4-start-services">4. Start Services </h2>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">docker-compose</span> <span class="token parameter variable">-f</span> services/api_gateway/docker-compose.yml up <span class="token parameter variable">-d</span>
+
+<span class="token function">docker-compose</span> <span class="token parameter variable">-f</span> services/agent/docker-compose.yml up <span class="token parameter variable">-d</span>
+
+<span class="token function">docker-compose</span> <span class="token parameter variable">-f</span> services/ingestion/docker-compose.yml up <span class="token parameter variable">-d</span>
+
+<span class="token function">docker-compose</span> <span class="token parameter variable">-f</span> services/evaluation/docker-compose.yml up <span class="token parameter variable">-d</span>
+
+<span class="token function">docker-compose</span> <span class="token parameter variable">-f</span> services/ui/docker-compose.yml up <span class="token parameter variable">-d</span>
+</code></pre><hr>
+<h1 id="-start-ingestion">📥 Start Ingestion </h1>
+<h2 id="upload-documents">Upload Documents </h2>
+<p>Use the UI or API:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>POST /upload
+</code></pre><hr>
+<h2 id="trigger-ingestion">Trigger Ingestion </h2>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>POST /ingest
+</code></pre><p>This will:</p>
+<ul>
+<li>Parse documents</li>
+<li>Generate embeddings</li>
+<li>Store in ChromaDB</li>
+<li>Build Knowledge Graph</li>
+</ul>
+<hr>
+<h1 id="️-start-ui">🖥️ Start UI </h1>
+<p>Once services are running, open:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>http://localhost:8501
+</code></pre><p>From the UI you can:</p>
+<ul>
+<li>Upload documents</li>
+<li>Trigger ingestion</li>
+<li>Query system</li>
+</ul>
+<hr>
+<h1 id="-query-the-system">🔍 Query the System </h1>
+<h2 id="from-ui">From UI </h2>
+<ol>
+<li>Open UI</li>
+<li>Enter query</li>
+<li>Submit</li>
+<li>View response</li>
+</ol>
+<hr>
+<h2 id="from-api">From API </h2>
+<h3 id="submit-query">Submit Query </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>POST /query
+</code></pre><hr>
+<h3 id="get-result">Get Result </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>GET /result/{request_id}
+</code></pre><hr>
+<h1 id="-api-usage-with-curl">🔌 API Usage with cURL </h1>
+<p>This section provides <strong>cURL commands</strong> for interacting with the system.</p>
+<hr>
+<h1 id="-upload-documents">📥 Upload Documents </h1>
+<p>Upload documents to ingestion service:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">curl</span> <span class="token parameter variable">-X</span> POST http://localhost:8002/upload <span class="token punctuation">\</span>
+  <span class="token parameter variable">-F</span> <span class="token string">"file=@sample.pdf"</span>
+</code></pre><hr>
+<h1 id="-trigger-ingestion">🚀 Trigger Ingestion </h1>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">curl</span> <span class="token parameter variable">-X</span> POST http://localhost:8002/ingest
+</code></pre><hr>
+<h1 id="-query-the-system-1">🔍 Query the System </h1>
+<p>Submit query:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">curl</span> <span class="token parameter variable">-X</span> POST http://localhost:8001/query <span class="token punctuation">\</span>
+  <span class="token parameter variable">-H</span> <span class="token string">"Content-Type: application/json"</span> <span class="token punctuation">\</span>
+  <span class="token parameter variable">-d</span> <span class="token string">'{
+        "query": "What is the document about?"
+      }'</span>
+</code></pre><hr>
+<h1 id="-get-query-result">📊 Get Query Result </h1>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">curl</span> http://localhost:8001/result/<span class="token operator">&lt;</span>request_id<span class="token operator">&gt;</span>
+</code></pre><hr>
+<h1 id="-health-check--ingestion-service">🩺 Health Check — Ingestion Service </h1>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">curl</span> http://localhost:8002/health
+</code></pre><hr>
+<h1 id="-health-check--api-gateway">🩺 Health Check — API Gateway </h1>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">curl</span> http://localhost:8001/health
+</code></pre><hr>
+<h1 id="-health-check--agent-service">🩺 Health Check — Agent Service </h1>
+<p>Agent service typically runs as a worker, but if health endpoint is exposed:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">curl</span> http://localhost:8004/health
+</code></pre><hr>
+<h1 id="-docker-container-status">🐳 Docker Container Status </h1>
+<p>Check running containers:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">docker</span> <span class="token function">ps</span>
+</code></pre><hr>
+<h1 id="-check-logs">📊 Check Logs </h1>
+<h2 id="ingestion-logs">Ingestion Logs </h2>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">docker</span> logs <span class="token parameter variable">-f</span> adeo_ingestion
+</code></pre><hr>
+<h2 id="api-gateway-logs">API Gateway Logs </h2>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">docker</span> logs <span class="token parameter variable">-f</span> adeo_api_gateway
+</code></pre><hr>
+<h2 id="agent-logs">Agent Logs </h2>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">docker</span> logs <span class="token parameter variable">-f</span> adeo_agent
+</code></pre><hr>
+<h1 id="-end-to-end-flow">🔄 End-to-End Flow </h1>
+<div class="mermaid">sequenceDiagram
+    autonumber
+
+    User-&gt;&gt;Upload API: Upload file
+    Upload API-&gt;&gt;Ingestion: Process
+
+    User-&gt;&gt;API Gateway: Query
+    API Gateway-&gt;&gt;Agent: Process
+
+    Agent-&gt;&gt;Databases: Retrieve
+    Agent-&gt;&gt;API Gateway: Response
+
+    API Gateway-&gt;&gt;User: Result
+</div><hr>
+<h1 id="-service-urls">🌐 Service URLs </h1>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UI</td>
+<td><a href="http://localhost:8501">http://localhost:8501</a></td>
+</tr>
+<tr>
+<td>API Gateway</td>
+<td><a href="http://localhost:8001">http://localhost:8001</a></td>
+</tr>
+<tr>
+<td>Ingestion</td>
+<td><a href="http://localhost:8002">http://localhost:8002</a></td>
+</tr>
+<tr>
+<td>Evaluation</td>
+<td><a href="http://localhost:8003">http://localhost:8003</a></td>
+</tr>
+<tr>
+<td>Neo4j</td>
+<td><a href="http://localhost:7474">http://localhost:7474</a></td>
+</tr>
+<tr>
+<td>RabbitMQ</td>
+<td><a href="http://localhost:15672">http://localhost:15672</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="-reset--delete-database-data">🧹 Reset / Delete Database Data </h1>
+<p>This section explains how to <strong>reset the system</strong> by deleting database data.</p>
+<p>This is useful when:</p>
+<ul>
+<li>Re-running ingestion</li>
+<li>Testing new documents</li>
+<li>Clearing corrupted data</li>
+<li>Resetting environment</li>
+</ul>
+<hr>
+<h1 id="option-1--using-script-recommended">Option 1 — Using Script (Recommended) </h1>
+<p>Use the provided script:</p>
+<h3 id="linux--mac-1">Linux / Mac </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>./remove_data.sh
+</code></pre><h3 id="windows-1">Windows </h3>
+<pre data-role="codeBlock" data-info="powershell" class="language-powershell powershell"><code><span class="token punctuation">.</span><span class="token operator">/</span>remove_data<span class="token punctuation">.</span>ps1
+</code></pre><p>This script will:</p>
+<ul>
+<li>Stop containers</li>
+<li>Remove containers</li>
+<li>Delete database data</li>
+<li>Clear ingestion cache</li>
+</ul>
+<hr>
+<h1 id="option-2--manual-reset">Option 2 — Manual Reset </h1>
+<h2 id="stop-containers">Stop Containers </h2>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">docker</span> stop adeo_neo4j
+<span class="token function">docker</span> <span class="token function">rm</span> adeo_neo4j
+
+<span class="token function">docker</span> stop adeo_chromadb
+<span class="token function">docker</span> <span class="token function">rm</span> adeo_chromadb
+</code></pre><hr>
+<h2 id="delete-database-data">Delete Database Data </h2>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">sudo</span> <span class="token function">rm</span> <span class="token parameter variable">-rf</span> infra/neo4j/neo4j_data
+<span class="token function">sudo</span> <span class="token function">rm</span> <span class="token parameter variable">-rf</span> infra/chromadb/chroma_data
+</code></pre><hr>
+<h2 id="clear-ingestion-cache">Clear Ingestion Cache </h2>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">rm</span> services/ingestion/ingestion_cache.json
+</code></pre><hr>
+<h1 id="️-warning">⚠️ Warning </h1>
+<p>This will permanently delete:</p>
+<ul>
+<li>Vector database (ChromaDB)</li>
+<li>Graph database (Neo4j)</li>
+<li>Ingestion cache</li>
+</ul>
+<h2>This reset is needed when you want to upload data again from scratch</h2>
+<h1 id="-running-evaluation">📊 Running Evaluation </h1>
+<p>The ADEO Hybrid RAG system includes a <strong>dedicated Evaluation Service</strong> to assess the performance of the RAG pipeline.</p>
+<p>The evaluation engine runs queries from a dataset, evaluates responses using an <strong>LLM-as-a-judge</strong>, and generates a report.</p>
+<hr>
+<h2 id="-trigger-evaluation">🚀 Trigger Evaluation </h2>
+<p>Run the following command to start evaluation:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">curl</span> <span class="token parameter variable">-X</span> POST http://localhost:8003/trigger_evaluation
+</code></pre><p>This will:</p>
+<ul>
+<li>Load evaluation dataset</li>
+<li>Send queries to API Gateway</li>
+<li>Retrieve responses</li>
+<li>Evaluate responses</li>
+<li>Generate evaluation report</li>
+</ul>
+<hr>
+<h2 id="-fetch-evaluation-report">📄 Fetch Evaluation Report </h2>
+<p>Once evaluation is complete, fetch the report using:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">curl</span> http://localhost:8003/report
+</code></pre><p>This returns:</p>
+<ul>
+<li>Evaluation scores</li>
+<li>Responses</li>
+<li>Metrics summary</li>
+<li>Latency information</li>
+</ul>
+<hr>
+<h2 id="-evaluation-metrics">📊 Evaluation Metrics </h2>
+<p>The evaluation engine measures:</p>
+<ul>
+<li><strong>Relevance</strong> — Does the answer address the question?</li>
+<li><strong>Faithfulness</strong> — Is the answer grounded in retrieved context?</li>
+<li><strong>Accuracy</strong> — Does the answer match expected response?</li>
+<li><strong>Latency</strong> — Response time</li>
+</ul>
+<hr>
+<h2 id="-evaluation-service">🐳 Evaluation Service </h2>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Port</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Evaluation</td>
+<td>8003</td>
+</tr>
+</tbody>
+</table>
+<p>Service Location:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>services/evaluation
+</code></pre><hr>
+<h2 id="-evaluation-flow">📈 Evaluation Flow </h2>
+<div class="mermaid">sequenceDiagram
+    autonumber
+
+    User-&gt;&gt;Evaluation: Trigger evaluation
+    Evaluation-&gt;&gt;Dataset: Load questions
+    Evaluation-&gt;&gt;API Gateway: Send queries
+    API Gateway-&gt;&gt;Agent: Process
+
+    Agent-&gt;&gt;Evaluation: Response
+    Evaluation-&gt;&gt;LLM Judge: Score
+
+    Evaluation-&gt;&gt;Report: Generate report
+</div><hr>
+<h1 id="️-running-evaluation-service">▶️ Running Evaluation Service </h1>
+<h2 id="using-docker-compose">Using Docker Compose </h2>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">docker-compose</span> <span class="token parameter variable">-f</span> services/evaluation/docker-compose.yml up <span class="token parameter variable">-d</span> <span class="token parameter variable">--build</span>
+</code></pre><hr>
+<h2 id="using-startup-scripts">Using Startup Scripts </h2>
+<p>If using full system startup:</p>
+<h3 id="linux--mac-2">Linux / Mac </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>./start.sh
+</code></pre><h3 id="windows-2">Windows </h3>
+<pre data-role="codeBlock" data-info="powershell" class="language-powershell powershell"><code><span class="token punctuation">.</span><span class="token operator">/</span><span class="token function">start</span><span class="token punctuation">.</span>ps1
+</code></pre><p>This automatically starts the evaluation service along with other services.</p>
+<hr>
+<h2 id="verify-evaluation-service">Verify Evaluation Service </h2>
+<p>Check service health:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">curl</span> http://localhost:8003/health
+</code></pre><hr>
+
+      </div>
+      
+      
+    
+    
+    <script type="module">
+// TODO: If ZenUML gets integrated into mermaid in the future,
+//      we can remove the following lines.
+
+
+var MERMAID_CONFIG = ({"startOnLoad":false});
+if (typeof MERMAID_CONFIG !== 'undefined') {
+  MERMAID_CONFIG.startOnLoad = false
+  MERMAID_CONFIG.cloneCssStyles = false
+  MERMAID_CONFIG.theme = "default"
+}
+
+mermaid.initialize(MERMAID_CONFIG || {})
+if (typeof(window['Reveal']) !== 'undefined') {
+  function mermaidRevealHelper(event) {
+    var currentSlide = event.currentSlide
+    var diagrams = currentSlide.querySelectorAll('div.mermaid')
+    for (var i = 0; i < diagrams.length; i++) {
+      var diagram = diagrams[i]
+      if (!diagram.hasAttribute('data-processed')) {
+        mermaid.init(null, diagram, ()=> {
+          Reveal.slide(event.indexh, event.indexv)
+        })
+      }
+    }
+  }
+  Reveal.addEventListener('slidetransitionend', mermaidRevealHelper)
+  Reveal.addEventListener('ready', mermaidRevealHelper)
+  await mermaid.run({
+    nodes: document.querySelectorAll('div.mermaid')
+  })
+} else {
+  await mermaid.run({
+    nodes: document.querySelectorAll('div.mermaid')
+  })
+}
+</script>
+    
+    
+    
+  
+    </body></html>

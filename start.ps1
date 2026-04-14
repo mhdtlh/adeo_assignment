@@ -32,4 +32,4 @@ docker-compose -f services/ui/docker-compose.yml up -d --build
 
 Write-Host "✅ All systems are GO!" -ForegroundColor Green
 Write-Host "👉 UI: http://localhost:8501" -ForegroundColor Cyan
-Write-Host "👉 API Gateway: http://localhost:8001" -ForegroundColor Cyan
+Write-Host "👉 API Gateway: http://localhost:8001" -ForegroundColor Cyan    

@@ -9,8 +9,8 @@ This section explains how to **set up the repository**, **start services**, **in
 ## 1. Clone Repository
 
 ```bash
-git clone <repo_url>
-cd <repo_name>
+git clone https://github.com/mhdtlh/adeo_assignment.git
+cd adeo_assignment
 ```
 
 ---
@@ -23,6 +23,8 @@ Create a `.env` file in the root directory:
 GROQ_API_KEY=
 TAVILY_API_KEY=
 LLAMA_CLOUD_API_KEY=
+NEO4J_URL=
+NEO4J_USERNAME=
 NEO4J_PASSWORD=
 ```
 
@@ -49,6 +51,7 @@ This will:
 * Build base Docker image
 * Start infrastructure containers
 * Start all services
+* It will take take about 25 mins for all the containers to build and get up running
 
 ---
 
@@ -305,5 +308,212 @@ sequenceDiagram
 | Evaluation  | [http://localhost:8003](http://localhost:8003)   |
 | Neo4j       | [http://localhost:7474](http://localhost:7474)   |
 | RabbitMQ    | [http://localhost:15672](http://localhost:15672) |
+
+---
+
+# 🧹 Reset / Delete Database Data
+
+This section explains how to **reset the system** by deleting database data.
+
+This is useful when:
+
+* Re-running ingestion
+* Testing new documents
+* Clearing corrupted data
+* Resetting environment
+
+---
+
+# Option 1 — Using Script (Recommended)
+
+Use the provided script:
+
+### Linux / Mac
+
+```bash
+./remove_data.sh
+```
+
+### Windows
+
+```powershell
+./remove_data.ps1
+```
+
+This script will:
+
+* Stop containers
+* Remove containers
+* Delete database data
+* Clear ingestion cache
+
+---
+
+# Option 2 — Manual Reset
+
+## Stop Containers
+
+```bash
+docker stop adeo_neo4j
+docker rm adeo_neo4j
+
+docker stop adeo_chromadb
+docker rm adeo_chromadb
+```
+
+---
+
+## Delete Database Data
+
+```bash
+sudo rm -rf infra/neo4j/neo4j_data
+sudo rm -rf infra/chromadb/chroma_data
+```
+
+---
+
+## Clear Ingestion Cache
+
+```bash
+rm services/ingestion/ingestion_cache.json
+```
+
+---
+
+# ⚠️ Warning
+
+This will permanently delete:
+
+* Vector database (ChromaDB)
+* Graph database (Neo4j)
+* Ingestion cache
+
+This reset is needed when you want to upload data again from scratch
+---
+
+# 📊 Running Evaluation
+
+The ADEO Hybrid RAG system includes a **dedicated Evaluation Service** to assess the performance of the RAG pipeline.
+
+The evaluation engine runs queries from a dataset, evaluates responses using an **LLM-as-a-judge**, and generates a report.
+
+---
+
+## 🚀 Trigger Evaluation
+
+Run the following command to start evaluation:
+
+```bash
+curl -X POST http://localhost:8003/trigger_evaluation
+```
+
+This will:
+
+* Load evaluation dataset
+* Send queries to API Gateway
+* Retrieve responses
+* Evaluate responses
+* Generate evaluation report
+
+---
+
+## 📄 Fetch Evaluation Report
+
+Once evaluation is complete, fetch the report using:
+
+```bash
+curl http://localhost:8003/report
+```
+
+This returns:
+
+* Evaluation scores
+* Responses
+* Metrics summary
+* Latency information
+
+---
+
+## 📊 Evaluation Metrics
+
+The evaluation engine measures:
+
+* **Relevance** — Does the answer address the question?
+* **Faithfulness** — Is the answer grounded in retrieved context?
+* **Accuracy** — Does the answer match expected response?
+* **Latency** — Response time
+
+---
+
+## 🐳 Evaluation Service
+
+| Service    | Port |
+| ---------- | ---- |
+| Evaluation | 8003 |
+
+Service Location:
+
+```
+services/evaluation
+```
+
+---
+
+## 📈 Evaluation Flow
+
+```mermaid
+sequenceDiagram
+    autonumber
+
+    User->>Evaluation: Trigger evaluation
+    Evaluation->>Dataset: Load questions
+    Evaluation->>API Gateway: Send queries
+    API Gateway->>Agent: Process
+
+    Agent->>Evaluation: Response
+    Evaluation->>LLM Judge: Score
+
+    Evaluation->>Report: Generate report
+```
+
+---
+
+# ▶️ Running Evaluation Service
+
+## Using Docker Compose
+
+```bash
+docker-compose -f services/evaluation/docker-compose.yml up -d --build
+```
+
+---
+
+## Using Startup Scripts
+
+If using full system startup:
+
+### Linux / Mac
+
+```bash
+./start.sh
+```
+
+### Windows
+
+```powershell
+./start.ps1
+```
+
+This automatically starts the evaluation service along with other services.
+
+---
+
+## Verify Evaluation Service
+
+Check service health:
+
+```bash
+curl http://localhost:8003/health
+```
 
 ---
